@@ -24,7 +24,7 @@ const events = [
 
 const coreMembers = [
   { 
-    name: "Alex Johnson", 
+    name: "Roshan Avatirak", 
     role: "President", 
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/alex-johnson",
