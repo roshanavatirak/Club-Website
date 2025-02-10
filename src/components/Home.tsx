@@ -26,7 +26,7 @@ const coreMembers = [
   { 
     name: "Roshan Avatirak", 
     role: "President", 
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGbtd8AP6e4og/profile-displayphoto-shrink_400_400/B56ZSikwgdHsAg-/0/1737894333710?e=1744848000&v=beta&t=FnkvkaivVQXspeaGK1ElaQVXrDUdNLL_7K92pZZtrK4",
     linkedin: "https://linkedin.com/in/alex-johnson",
     instagram: "https://instagram.com/alexjohnson"
   },
