@@ -152,7 +152,7 @@ function Home() {
   }, []); // Run only once
 
   useEffect(() => {
-    if (daysLeft === 0) {
+    if (daysLeft === 1) {
       const deadline = new Date("2025-02-15");
       deadline.setHours(23, 59, 59, 999);
       
