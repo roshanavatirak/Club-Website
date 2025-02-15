@@ -180,19 +180,23 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-black">{event.title}</h1>
+          {/* <h1 className="text-4xl font-bold mb-4 text-black">{event.title}</h1> */}
+          <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+  {event.title}
+</h1>
+
           <p className="text-xl text-gray-600 mb-8">{event.date}</p>
 
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-semibold mb-4">About the Event</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-black">About the Event</h2>
             <p className="text-gray-700 mb-6">{event.description}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-3">Event Details</h3>
+                <h3 className="text-xl font-semibold mb-3 text-black">Event Details</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li><span className="font-medium">Venue:</span> {event.venue}</li>
-                  <li><span className="font-medium">Expected Participants:</span> {event.expectedParticipants}</li>
+                  <li><span className="font-medium ">Venue:</span> {event.venue}</li>
+                  <li><span className="font-medium ">Expected Participants:</span> {event.expectedParticipants}</li>
                   <li><span className="font-medium">Registration Fee:</span> {event.registrationFee}</li>
                   <li>
                     <span className="font-medium">Organizers:</span>
@@ -206,7 +210,7 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-3">Schedule</h3>
+                <h3 className="text-xl font-semibold mb-3 text-black">Schedule</h3>
                 <ul className="list-disc ml-5 space-y-2 text-gray-700">
                   {event.schedule.map((item, index) => (
                     <li key={index}>{item}</li>
@@ -228,7 +232,7 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-3">Sponsors</h3>
+              <h3 className="text-xl font-semibold mb-3 text-black">Sponsors</h3>
               <div className="flex flex-wrap gap-4">
                 {event.sponsors.map((sponsor, index) => (
                   <span

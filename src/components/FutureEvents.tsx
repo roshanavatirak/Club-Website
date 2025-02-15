@@ -4,14 +4,14 @@ import { ArrowLeft, Clock } from 'lucide-react';
 
 const futureEvents = [
   {
-    // id: '1',
-    // title: 'Coding Competition 2024',
-    // date: 'March 15-16, 2024',
-    // thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-    // description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
-    // expectedParticipants: 200,
-    // registrationDeadline: 'March 10, 2024',
-    // registrationUrl: 'https://unstop.com/hackathon'
+    id: '1',
+    title: 'Coding Competition 2024',
+    date: 'March 15-16, 2024',
+    thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+    description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
+    expectedParticipants: 200,
+    registrationDeadline: 'March 10, 2024',
+    registrationUrl: 'https://unstop.com/hackathon'
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ const futureEvents = [
     expectedParticipants: 150,
     registrationDeadline: 'March 10, 2025',
     registrationUrl: 'https://unstop.com/hackathon'
-  },
+  }
   // {
   //   id: '3',
   //   title: 'Summer Bootcamp 2024',
