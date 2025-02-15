@@ -24,19 +24,19 @@ const events = [
   {
     title: "Hackathon 2024",
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
-    date: "Coming Soon",
+    date: "March 20, 2025",
     registrationUrl: "https://unstop.com/hackathon",
     registrationDeadline: "March 10, 2025"
   },
   {
     title: "FlutterFlow Workshop",
     image: flutterflowImage,
-    date: "October 25, 2025"
+    date: "October 25, 2024"
   },
   {
     title: "Tech Titans",
     image: techTitansImage,
-    date: "25th October, 2026"
+    // date: "25th October, 2026"
   
   }
 ];
@@ -142,7 +142,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-15T23:59:59"); // Set your actual event date
+    const eventDate = new Date("2025-02-16T23:59:59"); // Set your actual event date
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
@@ -152,7 +152,7 @@ function Home() {
   }, []); // Run only once
   useEffect(() => {
     if (daysLeft === 1) { // ✅ Start countdown when today is the event day
-      const deadline = new Date("2025-02-15T23:59:59");
+      const deadline = new Date("2025-02-16T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
       const countdownTimer = setInterval(() => {
