@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Code2, Users, Calendar, Target, ChevronLeft, ChevronRight, Clock, AlertCircle, Linkedin, Instagram } from 'lucide-react';
+import flutterflowImage from '../assets/team/workshop2024.jpg';
+import techTitansImage from '../assets/team/techtitans.jpg';
 
 const pastEvents = [
   {
@@ -47,14 +49,15 @@ const events = [
     registrationDeadline: "March 10, 2024"
   },
   {
-    title: "Code Workshop",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200",
-    date: "Next Month"
+    title: "FlutterFlow Workshop",
+    image: flutterflowImage,
+    date: "October 25, 2025"
   },
   {
-    title: "Tech Symposium",
-    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200",
-    date: "Planning Phase"
+    title: "Tech Titans",
+    image: techTitansImage,
+    date: "25th October, 2026"
+  
   }
 ];
 
@@ -165,7 +168,9 @@ function Home() {
       
       const countdownTimer = setInterval(() => {
         const now = new Date();
-        const timeDiff = deadline - now;
+        // const timeDiff = deadline - now;
+        const timeDiff = deadline.getTime() - now.getTime(); // ✅ Fix: Convert Date to number
+
         
         if (timeDiff <= 0) {
           clearInterval(countdownTimer);
@@ -452,4 +457,3 @@ function Home() {
 
 export default Home;
 
-export default Home
