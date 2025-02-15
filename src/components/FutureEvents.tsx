@@ -3,66 +3,66 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
 
 const futureEvents = [
-  {
-    id: '1',
-    title: 'Coding Competition 2024',
-    date: 'March 15-16, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-    description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
-    expectedParticipants: 200,
-    registrationDeadline: 'March 10, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
-  },
+  // {
+  //   id: '1',
+  //   title: 'Coding Competition 2024',
+  //   date: 'March 15-16, 2024',
+  //   thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+  //   description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
+  //   expectedParticipants: 200,
+  //   registrationDeadline: 'March 10, 2024',
+  //   registrationUrl: 'https://unstop.com/hackathon'
+  // },
   {
     id: '2',
-    title: 'Tech Talk Series',
-    date: 'April 5-7, 2024',
+    title: 'Hackathon',
+    date: 'March 20, 2025',
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
     description: 'Three days of insightful talks from industry experts on emerging technologies.',
     expectedParticipants: 150,
-    registrationDeadline: 'April 1, 2024',
+    registrationDeadline: 'March 10, 2025',
     registrationUrl: 'https://unstop.com/hackathon'
   },
-  {
-    id: '3',
-    title: 'Summer Bootcamp 2024',
-    date: 'May 1-15, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800',
-    description: 'Intensive two-week bootcamp covering web development, mobile apps, and cloud computing.',
-    expectedParticipants: 100,
-    registrationDeadline: 'April 20, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
-  },
-  {
-    id: '4',
-    title: 'Blockchain Workshop',
-    date: 'June 10, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
-    description: 'Learn about blockchain technology and build your first smart contract.',
-    expectedParticipants: 80,
-    registrationDeadline: 'June 5, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
-  },
-  {
-    id: '5',
-    title: 'AI/ML Conference',
-    date: 'July 20, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800',
-    description: 'Conference focusing on the latest developments in AI and Machine Learning.',
-    expectedParticipants: 250,
-    registrationDeadline: 'July 15, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
-  },
-  {
-    id: '6',
-    title: 'Hackathon 2024',
-    date: 'August 15-16, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
-    description: 'Annual hackathon event with exciting themes and amazing prizes.',
-    expectedParticipants: 300,
-    registrationDeadline: 'August 10, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
-  },
+  // {
+  //   id: '3',
+  //   title: 'Summer Bootcamp 2024',
+  //   date: 'May 1-15, 2024',
+  //   thumbnail: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800',
+  //   description: 'Intensive two-week bootcamp covering web development, mobile apps, and cloud computing.',
+  //   expectedParticipants: 100,
+  //   registrationDeadline: 'April 20, 2024',
+  //   registrationUrl: 'https://unstop.com/hackathon'
+  // },
+  // {
+  //   id: '4',
+  //   title: 'Blockchain Workshop',
+  //   date: 'June 10, 2024',
+  //   thumbnail: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800',
+  //   description: 'Learn about blockchain technology and build your first smart contract.',
+  //   expectedParticipants: 80,
+  //   registrationDeadline: 'June 5, 2024',
+  //   registrationUrl: 'https://unstop.com/hackathon'
+  // },
+  // {
+  //   id: '5',
+  //   title: 'AI/ML Conference',
+  //   date: 'July 20, 2024',
+  //   thumbnail: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800',
+  //   description: 'Conference focusing on the latest developments in AI and Machine Learning.',
+  //   expectedParticipants: 250,
+  //   registrationDeadline: 'July 15, 2024',
+  //   registrationUrl: 'https://unstop.com/hackathon'
+  // },
+  // {
+  //   id: '6',
+  //   title: 'Hackathon 2024',
+  //   date: 'August 15-16, 2024',
+  //   thumbnail: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800',
+  //   description: 'Annual hackathon event with exciting themes and amazing prizes.',
+  //   expectedParticipants: 300,
+  //   registrationDeadline: 'August 10, 2024',
+  //   registrationUrl: 'https://unstop.com/hackathon'
+  // },
 ];
 
 function FutureEvents() {

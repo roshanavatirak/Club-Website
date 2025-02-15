@@ -67,7 +67,10 @@ function PastEvents() {
           Back to Home
         </button>
 
-        <h1 className="text-4xl font-bold mb-12 text-center">Past Events</h1>
+        <h1 className="text-4xl font-bold mb-12 text-center text-black">
+  Past Events
+</h1>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pastEvents.map((event) => (
