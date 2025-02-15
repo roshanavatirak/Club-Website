@@ -152,7 +152,7 @@ function Home() {
   }, []); // Run only once
 
   useEffect(() => {
-    if (daysLeft === 1) {
+    if (daysLeft === 0) {
       const deadline = new Date();
       deadline.setHours(23, 59, 59, 999);
       
