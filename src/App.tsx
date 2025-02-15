@@ -48,7 +48,7 @@ function App() {
       {/* Footer with Social Links */}
 <footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
   <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}
-    <p className="text-gray-600 dark:text-gray-300">
+    <p className="text-white">
       Created by{' '}
       <a
         href="https://www.linkedin.com/in/roshan-avatirak"

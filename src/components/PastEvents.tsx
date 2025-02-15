@@ -5,11 +5,11 @@ import { ArrowLeft } from 'lucide-react';
 const pastEvents = [
   {
     id: '1',
-    title: 'Annual Hackathon 2023',
-    date: 'November 15-16, 2023',
+    title: 'FlutterFlow Wokshop',
+    date: 'October 25, 2023',
     thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-    description: 'A 24-hour coding marathon where students built innovative solutions.',
-    participants: 150,
+    description: 'The Flutter Flow Workshop provided hands-on experience in building a WhatsApp Clone, covering UI design and real-time chat using Flutter Flow’s no-code platform.',
+    participants: '100+'
   },
   // {
   //   id: '2',

@@ -18,7 +18,7 @@ const futureEvents = [
     title: 'Hackathon 2025',
     date: 'March 20, 2025',
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
-    description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.',
+    description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
     registrationDeadline: 'March 10, 2025',
     registrationUrl: 'https://unstop.com/hackathon'

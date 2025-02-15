@@ -4,15 +4,13 @@ import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const eventDetails = {
   '1': {
-    title: 'Annual Hackathon 2023',
-    date: 'November 15-16, 2023',
-    description: `Our flagship 24-hour coding marathon brought together 150 talented students from various colleges. 
-    Participants worked on innovative solutions across multiple tracks including AI/ML, Web Development, and Mobile Apps.
-    The event featured mentoring sessions, technical workshops, and exciting prizes for the winning teams.`,
-    participants: 150,
+    title: 'FlutterFlow Workshop',
+    date: 'October 25, 2024',
+    description: `The Flutter Flow Workshop provided an immersive hands-on experience, guiding participants in building a WhatsApp Clone using Flutter Flow’s powerful no-code platform. Attendees learned to design intuitive UI, integrate real-time chat functionality, and implement user authentication seamlessly. This workshop empowered participants with practical knowledge of app development, helping them create a fully functional project with ease.`,
+    participants: '100+',
     venue: 'Sipna College of Engineering & Technology',
-    organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
-    sponsors: ['TechCorp', 'DevHub', 'CloudServices'],
+    organizers: ['Sipna Coder’s Club'],
+    sponsors: ['NA'],
     images: [
       'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200',
       'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
@@ -20,11 +18,13 @@ const eventDetails = {
       'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200',
     ],
     highlights: [
-      'Over 30 projects submitted',
-      'Prizes worth ₹1,00,000',
-      'Industry expert mentoring',
-      'Professional networking opportunities',
-    ],
+      'Introduction to Flutter Flow – No-code app development basics',
+      'Designed & developed a WhatsApp-like UI with smooth navigation',
+      'Integrated real-time chat functionality with backend support',
+      'Explored database integration and scalability best practices',
+      'Hands-on coding exercises & live project implementation',
+      
+      ],
   },
   // Add more event details as needed
 };
