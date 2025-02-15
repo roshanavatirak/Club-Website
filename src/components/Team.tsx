@@ -13,79 +13,79 @@ const coreMembers = [
   { 
     name: "Pranav Raut", 
     role: "Vice President", 
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/sarah-chen",
-    instagram: "https://instagram.com/sarahchen"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEGnq1TXMaP1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720788756740?e=1744848000&v=beta&t=dV8EFQedg9h-x_auWIjNtz4WGAGtPGXf1ThzCcE042k",
+    linkedin: "https://www.linkedin.com/in/rautpranav13/",
+    instagram: "https://www.instagram.com/raut.pranav13/?hl=en"
   },
   { 
     name: "Nishchay Sahu", 
     role: "Treasuree", 
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/mike-zhang",
-    instagram: "https://instagram.com/mikezhang"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHAgIuHA_7dMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1694451636949?e=1744848000&v=beta&t=sbIq5EoBDyRzAVhtpUpuZSglfc6VILArRZ6WdbLTBpA",
+    linkedin: "https://www.linkedin.com/in/nishchay-sahu-648625282/",
+    instagram: "https://www.instagram.com/_nishchay_sahu/?hl=en"
   },
   { 
     name: "Disha Chauhan", 
     role: "Secretary", 
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/emma-davis",
-    instagram: "https://instagram.com/emmadavis"
+    image: "",
+    linkedin: "https://www.linkedin.com/in/disha-chauhan-50742b259/",
+    instagram: "https://www.instagram.com/disha_chauhan04/?hl=en"
   },
   { 
     name: "Roshan Avatirak", 
     role: "Public Relation Officer(PRO)", 
     image: "https://media.licdn.com/dms/image/v2/D5603AQGbtd8AP6e4og/profile-displayphoto-shrink_400_400/B56ZSikwgdHsAg-/0/1737894333710?e=1744848000&v=beta&t=FnkvkaivVQXspeaGK1ElaQVXrDUdNLL_7K92pZZtrK4",
     linkedin: "https://www.linkedin.com/in/roshan-avatirak/",
-    instagram: "https://instagram.com/davidkim"
+    // instagram: ""
   },
   { 
     name: "Vrushabh Selokar", 
     role: "Public Relation Officer(PRO)", 
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/lisa-wang",
-    instagram: "https://instagram.com/lisawang"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHbuAK0ekJikw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728185113978?e=1744848000&v=beta&t=ddzxTaobk_pYk1bIy3NvK51RuOMi-rOgl_MegpmEis4",
+    linkedin: "https://www.linkedin.com/in/vrushabh-shelokar-786427314/",
+    instagram: "https://www.instagram.com/vrush_459/?hl=en"
   },
   { 
     name: "Pratik Dhokne", 
     role: "Technical Head", 
-    image: "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/tom-wilson",
-    instagram: "https://instagram.com/tomwilson"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFOjMzi0x10hA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728919202228?e=1744848000&v=beta&t=desCndH3-hDVNfhL66Ep6PkdUUi9j8EtzNDy2kBRXr8",
+    linkedin: "https://www.linkedin.com/in/pratikdhokne/",
+    instagram: "https://www.instagram.com/pratikdhokne/?hl=en"
   },
   { 
     name: "Apurva Pande", 
     role: "Executive Member(Head)", 
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/priya-patel",
-    instagram: "https://instagram.com/priyapatel"
+    image: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
+    linkedin: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
+    instagram: "https://www.instagram.com/apurvapande27/?hl=en"
   },
   { 
     name: "Prit Thombare", 
     role: "Executive Member", 
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/james-lee",
-    instagram: "https://instagram.com/jameslee"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFM6AlD09epCQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721844801475?e=1744848000&v=beta&t=qhuBs2ttRL5MO7KC3mxDfiUw5uHGJ0HpmBBM0J42jXI",
+    linkedin: "https://www.linkedin.com/in/prit-thombare-6b741a296/",
+    instagram: "https://www.instagram.com/gaauureeee/?hl=en"
   },
   { 
     name: "Ritesh Pawar", 
     role: "Executive Member", 
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/nina-rodriguez",
-    instagram: "https://instagram.com/ninarodriguez"
+    image: "",
+    linkedin: "",
+    instagram: ""
   },
   { 
     name: "Nandita Sahu", 
     role: "Executive Member", 
-    image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/ryan-chang",
-    instagram: "https://instagram.com/ryanchang"
+    image: "",
+    linkedin: "",
+    instagram: ""
   },
   { 
     name: "Vaishnavi Jaiswal", 
     role: "Executive Member", 
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/maya-singh",
-    instagram: "https://instagram.com/mayasingh"
+    image: "https://media.licdn.com/dms/image/v2/D4E35AQGhL5Q8xJmP-w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1729869995146?e=1740225600&v=beta&t=warHxwb6dzxMMkyXdDnIhU2SbHY4fRvhir9y8x3m46k",
+    linkedin: "https://www.linkedin.com/in/vaishnavi-jaiswal-570915300/",
+    instagram: "https://www.instagram.com/_vaishnavi_12.7/?hl=en"
   }
 ];
 
