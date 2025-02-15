@@ -3,16 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
 
 const futureEvents = [
-  // {
-  //   id: '1',
-  //   title: 'Coding Competition 2024',
-  //   date: 'March 15-16, 2024',
-  //   thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-  //   description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
-  //   expectedParticipants: 200,
-  //   registrationDeadline: 'March 10, 2024',
-  //   registrationUrl: 'https://unstop.com/hackathon'
-  // },
+  {
+    // id: '1',
+    // title: 'Coding Competition 2024',
+    // date: 'March 15-16, 2024',
+    // thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+    // description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
+    // expectedParticipants: 200,
+    // registrationDeadline: 'March 10, 2024',
+    // registrationUrl: 'https://unstop.com/hackathon'
+  },
   {
     id: '2',
     title: 'Hackathon',
@@ -84,8 +84,8 @@ function FutureEvents() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
         <div className="flex justify-center">
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl"> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl h-[300px] md:h-[400px] lg:h-[500px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
+      
 
 
         {futureEvents.map((event, index) => {
