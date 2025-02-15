@@ -84,7 +84,9 @@ function FutureEvents() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
         <div className="flex justify-center">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl h-[300px] md:h-[400px] lg:h-[500px]">
+
 
         {futureEvents.map((event, index) => {
   if (!event?.registrationDeadline) return null; // Skip if no deadline
