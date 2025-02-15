@@ -120,7 +120,7 @@ const event = id && eventDetails[id as keyof typeof eventDetails];
         {/* Event Details */}
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">{event.title}</h1>
-          <p className="text-xl text-gray-600 mb-8">{event.date}</p>
+          <p className="text-xl text-gray-600 dark:text-white mb-8">{event.date}</p>
 
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-black">About the Event</h2>
