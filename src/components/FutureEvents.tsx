@@ -83,70 +83,66 @@ function FutureEvents() {
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
         <div className="flex justify-center">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
-    <div></div> {/* Empty first column */}
 
-    {futureEvents.map((event, index) => {
-      if (!event?.registrationDeadline) return null; // Skip if no deadline
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-4x1">
+        <div></div> {/* Empty first column */}
+        {futureEvents.map((event, index) => {
+  if (!event?.registrationDeadline) return null; // Skip if no deadline
 
-      const daysRemaining = Math.ceil(
-        (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
-          (1000 * 60 * 60 * 24)
-      );
+  const daysRemaining = Math.ceil(
+    (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
+      (1000 * 60 * 60 * 24)
+  );
 
-      return (
-        <div 
-          key={event.id}
-          className="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300 max-w-sm md:max-w-lg"
-        >
-          <img 
-            src={event.thumbnail} 
-            alt={event.title} 
-            className="w-full h-40 md:h-48 object-cover"
-          />
-
-          <div className="p-4 md:p-5">
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-black">{event.title}</h3>
-            <p className="text-gray-600 mb-1 text-sm md:text-base">{event.date}</p>
-            <p className="text-gray-700 mb-3 text-sm md:text-base">{event.description}</p>
-
-            <div className="space-y-1">
-              <p className="text-green-600 text-sm md:text-base">Expected Participants: {event.expectedParticipants}</p>
-              <p className="text-red-600 text-sm md:text-base">Registration Deadline: {event.registrationDeadline}</p>
-            </div>
-
-            <div className="mt-3 flex justify-between items-center">
-              <button
-                onClick={() => navigate(`/future-events/${event.id}`)}
-                className="text-blue-600 hover:text-blue-800 text-sm md:text-base"
+            return (
+              <div
+                key={event.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
               >
-                View Details
-              </button>
-
-              {event.registrationUrl && (
-                <a
-                  href={event.registrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white font-medium hover:shadow-lg hover:-translate-y-1 transition-all"
-                >
-                  <Clock className="w-4 h-4 mr-1" />
-                  Register
-                  <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-xs md:text-sm">
-                    {daysRemaining}d
-                  </span>
-                </a>
-              )}
-            </div>
-          </div>
+                <img
+                  src={event.thumbnail}
+                  alt={event.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-black">{event.title}</h3>
+                  <p className="text-gray-600 mb-2">{event.date}</p>
+                  <p className="text-gray-700 mb-4">{event.description}</p>
+                  <div className="space-y-2">
+                    <p className="text-green-600">Expected Participants: {event.expectedParticipants}</p>
+                    <p className="text-red-600">Registration Deadline: {event.registrationDeadline}</p>
+                  </div>
+                  
+                  <div className="mt-4 flex justify-between items-center">
+                    <button
+                      onClick={() => navigate(`/future-events/${event.id}`)}
+                      className="text-blue-600 hover:text-blue-800"
+                    >
+                      View Details
+                    </button>
+                    
+                    {event.registrationUrl && (
+                      <a
+                        href={event.registrationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white font-semibold hover:shadow-lg hover:-translate-y-1 transition-all"
+                      >
+                        <Clock className="w-4 h-4 mr-2" />
+                        Register
+                        <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
+                          {daysRemaining}d
+                        </span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+           <div></div> {/* Empty third column */}
         </div>
-      );
-    })}
-
-    <div></div> {/* Empty third column */}
-  </div>
-</div>
-
+      </div>
       </div>
       {/* <div className="container mx-auto px-4">
         <div className="text-center mt-12">
