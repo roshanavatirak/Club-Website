@@ -3,19 +3,18 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock, AlertCircle } from 'lucide-react';
 
 const futureEventDetails = {
-  '1': {
-    title: 'Coding Competition 2024',
-    date: 'March 15-16, 2024',
-    description: `Join us for an exciting two-day coding competition where participants will tackle 
-    challenging algorithmic problems and showcase their problem-solving skills. The event will feature 
-    multiple rounds of increasing difficulty, live leaderboards, and expert judges from top tech companies.`,
+  '2': {
+    title: 'Hackathon 2025',
+    date: 'March 20, 2025',
+    description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.",
     expectedParticipants: 200,
-    venue: 'Sipna College of Engineering & Technology',
-    registrationDeadline: 'March 10, 2024',
-    registrationFee: '₹500',
+    venue: "CSE Seminar Hall and CC Lab, Sipna College of Engineering & Technology",
+    registrationDeadline: 'March 10, 2025',
+    registrationFee: 'Free',
     registrationUrl: 'https://unstop.com/hackathon',
-    organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
-    sponsors: ['TechCorp', 'DevHub', 'CloudServices'],
+    // organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
+    organizers: ['Sipna Coders Club'],
+    sponsors: ['Unstop'],
     images: [
       'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200',
       'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
@@ -23,45 +22,51 @@ const futureEventDetails = {
       'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200',
     ],
     schedule: [
-      'Day 1: Preliminary Rounds',
-      'Day 1 Evening: Elimination Round',
-      'Day 2: Final Round',
-      'Day 2 Evening: Prize Distribution',
+      "Round 1",
+      "February 15: Registration Opens",
+      "March 10: Registration Closes",
+      "March 12: Online PPT Evaluation",
+      "March 13: Online Result Declaration – Top 40 Teams Will Be Selected",
+      "Round 2",
+      "March 20: Final Day - Offline Hackathon",
+      "March 20 Evening: Prize Distribution",
     ],
+    
+    
     prizes: [
-      'First Prize: ₹50,000',
-      'Second Prize: ₹30,000',
-      'Third Prize: ₹20,000',
-      'Special Category Prizes',
+      'First Prize: ₹11,000',
+      'Second Prize: ₹7,000',
+      'Third Prize: ₹4,000',
+      'Special goodies by Unstop*',
     ],
   },
-  '2': {
-    title: 'Tech Talk Series',
-    date: 'April 5-7, 2024',
-    description: `A three-day series of insightful talks from industry experts covering emerging technologies,
-    best practices, and career guidance. Network with professionals and gain valuable insights into the tech industry.`,
-    expectedParticipants: 150,
-    venue: 'Sipna College Auditorium',
-    registrationDeadline: 'April 1, 2024',
-    registrationFee: '₹300',
-    organizers: ['Emma Davis', 'David Kim', 'Lisa Wang'],
-    sponsors: ['TechHub', 'InnovateX', 'FutureLearn'],
-    images: [
-      'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
-    ],
-    schedule: [
-      'Day 1: Web Technologies',
-      'Day 2: AI and Machine Learning',
-      'Day 3: Cloud Computing and DevOps',
-    ],
-    speakers: [
-      'Dr. Sarah Smith - AI Research Lead',
-      'John Doe - Senior Software Architect',
-      'Jane Wilson - Cloud Solutions Expert',
-    ],
-  },
+  // '1': {
+  //   title: 'Tech Talk Series',
+  //   date: 'April 5-7, 2024',
+  //   description: `A three-day series of insightful talks from industry experts covering emerging technologies,
+  //   best practices, and career guidance. Network with professionals and gain valuable insights into the tech industry.`,
+  //   expectedParticipants: 150,
+  //   venue: 'Sipna College Auditorium',
+  //   registrationDeadline: 'April 1, 2024',
+  //   registrationFee: '₹300',
+  //   organizers: ['Emma Davis', 'David Kim', 'Lisa Wang'],
+  //   sponsors: ['TechHub', 'InnovateX', 'FutureLearn'],
+  //   images: [
+  //     'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=1200',
+  //     'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
+  //     'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
+  //   ],
+  //   schedule: [
+  //     'Day 1: Web Technologies',
+  //     'Day 2: AI and Machine Learning',
+  //     'Day 3: Cloud Computing and DevOps',
+  //   ],
+  //   speakers: [
+  //     'Dr. Sarah Smith - AI Research Lead',
+  //     'John Doe - Senior Software Architect',
+  //     'Jane Wilson - Cloud Solutions Expert',
+  //   ],
+  // },
 };
 
 function FutureEventDetails() {
@@ -185,7 +190,9 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
   {event.title}
 </h1>
 
-          <p className="text-xl text-gray-600 mb-8">{event.date}</p>
+          {/* <p className="text-xl text-gray-600 mb-8">{event.date}</p> */}
+          <p className="text-xl text-gray-600 dark:text-white mb-8">{event.date}</p>
+
 
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-black">About the Event</h2>

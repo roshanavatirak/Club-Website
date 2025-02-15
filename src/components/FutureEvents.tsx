@@ -4,22 +4,22 @@ import { ArrowLeft, Clock } from 'lucide-react';
 
 const futureEvents = [
   {
-    id: '1',
-    title: 'Coding Competition 2024',
-    date: 'March 15-16, 2024',
-    thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
-    description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
-    expectedParticipants: 200,
-    registrationDeadline: 'March 10, 2024',
-    registrationUrl: 'https://unstop.com/hackathon'
+    // id: '1',
+    // title: 'Coding Competition 2024',
+    // date: 'March 15-16, 2024',
+    // thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+    // description: 'A competitive coding event featuring algorithmic challenges and problem-solving tasks.',
+    // expectedParticipants: 200,
+    // registrationDeadline: 'March 10, 2024',
+    // registrationUrl: 'https://unstop.com/hackathon'
   },
   {
     id: '2',
-    title: 'Hackathon',
+    title: 'Hackathon 2025',
     date: 'March 20, 2025',
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
-    description: 'Three days of insightful talks from industry experts on emerging technologies.',
-    expectedParticipants: 150,
+    description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.',
+    expectedParticipants: 200,
     registrationDeadline: 'March 10, 2025',
     registrationUrl: 'https://unstop.com/hackathon'
   }
