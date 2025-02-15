@@ -84,7 +84,7 @@ function FutureEvents() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
         <div className="flex justify-center">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5x4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5x1">
       
 
 
@@ -145,7 +145,7 @@ function FutureEvents() {
         </div>
       </div>
       </div>
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="text-center mt-12">
           <p className="text-gray-600 dark:text-gray-300">
             Created by{' '}
@@ -159,7 +159,7 @@ function FutureEvents() {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

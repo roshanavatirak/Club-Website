@@ -148,7 +148,7 @@ function Team() {
         </div>
 
         {/* Creator Credit */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-gray-600 dark:text-gray-300">
             Created by{' '}
             <a
@@ -160,7 +160,7 @@ function Team() {
               Roshan Avatirak
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

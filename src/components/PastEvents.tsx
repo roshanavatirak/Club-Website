@@ -92,7 +92,7 @@ function PastEvents() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4">
+      {/* <div className="container mx-auto px-4">
         <div className="text-center mt-12">
           <p className="text-gray-600 dark:text-gray-300">
             Created by{' '}
@@ -106,7 +106,7 @@ function PastEvents() {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
