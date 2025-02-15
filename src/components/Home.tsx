@@ -151,8 +151,8 @@ function Home() {
     setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
   }, []); // Run only once
   useEffect(() => {
-    if (daysLeft === 1) { // ✅ Start countdown when today is the event day
-      const deadline = new Date("2025-02-15T23:59:59");
+    if (daysLeft === 0) { // ✅ Start countdown when today is the event day
+      const deadline = new Date("2025-02-16T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
       const countdownTimer = setInterval(() => {
