@@ -26,7 +26,7 @@ const events = [
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
     date: "Coming Soon",
     registrationUrl: "https://unstop.com/hackathon",
-    registrationDeadline: "March 10, 2024"
+    registrationDeadline: "March 10, 2025"
   },
   {
     title: "FlutterFlow Workshop",
@@ -267,11 +267,11 @@ function Home() {
             
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="text-2xl font-bold mb-2">₹1,00,000</h3>
+                <h3 className="text-2xl font-bold mb-2">₹22,000+</h3>
                 <p className="text-blue-200">in Prizes</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="text-2xl font-bold mb-2">24 Hours</h3>
+                <h3 className="text-2xl font-bold mb-2">12 Hours</h3>
                 <p className="text-blue-200">of Coding</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
@@ -315,7 +315,7 @@ function Home() {
               </div>
               <div className="flex items-center text-yellow-300 text-sm">
                 <AlertCircle className="w-4 h-4 mr-2" />
-                <span>Limited slots available! Register before March 10, 2024</span>
+                <span>Limited slots available! Register before March 10, 2025</span>
               </div>
             </div>
           </div>
