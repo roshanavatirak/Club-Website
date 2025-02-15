@@ -102,21 +102,21 @@ function FutureEvents() {
                 <img
                   src={event.thumbnail}
                   alt={event.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-40 md:h-48 object-cover"
                 />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-black">{event.title}</h3>
-                  <p className="text-gray-600 mb-2">{event.date}</p>
-                  <p className="text-gray-700 mb-4">{event.description}</p>
-                  <div className="space-y-2">
-                    <p className="text-green-600">Expected Participants: {event.expectedParticipants}</p>
-                    <p className="text-red-600">Registration Deadline: {event.registrationDeadline}</p>
+                <div className="p-4 md:p-5">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-black">{event.title}</h3>
+                  <p className="text-gray-600 mb-1 text-sm md:text-base">{event.date}</p>
+                  <p className="text-gray-700 mb-3 text-sm md:text-base">{event.description}</p>
+                  <div className="space-y-1">
+                    <p className="text-green-600 text-sm md:text-base">Expected Participants: {event.expectedParticipants}</p>
+                    <p className="text-red-600 text-sm md:text-base">Registration Deadline: {event.registrationDeadline}</p>
                   </div>
                   
-                  <div className="mt-4 flex justify-between items-center">
+                  <div className="mt-3 flex justify-between items-center">
                     <button
                       onClick={() => navigate(`/future-events/${event.id}`)}
-                      className="text-blue-600 hover:text-blue-800"
+                      className="text-blue-600 hover:text-blue-800 text-sm md:text-base"
                     >
                       View Details
                     </button>
