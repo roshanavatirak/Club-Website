@@ -142,7 +142,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-20"); // Set your actual event date
+    const eventDate = new Date("2025-03-10"); // Set your actual event date
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
