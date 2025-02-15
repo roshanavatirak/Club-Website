@@ -52,7 +52,6 @@ const pastEvents = [
   //   participants: 90,
   // },
 ];
-
 function PastEvents() {
   const navigate = useNavigate();
 
@@ -69,46 +68,58 @@ function PastEvents() {
 
         <h1 className="text-4xl font-bold mb-12 text-center">Past Events</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {pastEvents.map((event) => (
-            <div
-              key={event.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300"
-              onClick={() => navigate(`/past-events/${event.id}`)}
-            >
-              <img
-                src={event.thumbnail}
-                alt={event.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-black">{event.title}</h3>
-                <p className="text-gray-600 mb-2">{event.date}</p>
-                <p className="text-gray-700">{event.description}</p>
-                <p className="text-blue-600 mt-4">{event.participants} Participants</p>
+        {/* Centering the grid layout similar to Upcoming Events */}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-4xl">
+            <div></div> {/* Empty first column for alignment */}
+
+            {pastEvents.map((event) => (
+              <div
+                key={event.id}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+                onClick={() => navigate(`/past-events/${event.id}`)}
+              >
+                <img
+                  src={event.thumbnail}
+                  alt={event.title}
+                  className="w-full h-40 md:h-48 object-cover"
+                />
+                <div className="p-4 md:p-5">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-black">{event.title}</h3>
+                  <p className="text-gray-600 mb-1 text-sm md:text-base">{event.date}</p>
+                  <p className="text-gray-700 mb-3 text-sm md:text-base">{event.description}</p>
+                  <p className="text-blue-600 text-sm md:text-base">{event.participants} Participants</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+
+            <div></div> {/* Empty third column for alignment */}
+          </div>
         </div>
       </div>
-
-      {/* <div className="container mx-auto px-4">
-        <div className="text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-300">
-            Created by{' '}
-            <a
-              href="https://www.linkedin.com/in/roshan-avatirak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-            >
-              Roshan Avatirak
-            </a>
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 }
 
 export default PastEvents;
+
+//       {/* <div className="container mx-auto px-4">
+//         <div className="text-center mt-12">
+//           <p className="text-gray-600 dark:text-gray-300">
+//             Created by{' '}
+//             <a
+//               href="https://www.linkedin.com/in/roshan-avatirak"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+//             >
+//               Roshan Avatirak
+//             </a>
+//           </p>
+//         </div>
+//       </div> */}
+//     </div>
+//   );
+// }
+
+// export default PastEvents;
