@@ -101,7 +101,7 @@ function FutureEvents() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-black">{event.title}</h3>
                   <p className="text-gray-600 mb-2">{event.date}</p>
                   <p className="text-gray-700 mb-4">{event.description}</p>
                   <div className="space-y-2">

@@ -180,7 +180,7 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4">{event.title}</h1>
+          <h1 className="text-4xl font-bold mb-4 text-black">{event.title}</h1>
           <p className="text-xl text-gray-600 mb-8">{event.date}</p>
 
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
