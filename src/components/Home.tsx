@@ -131,7 +131,7 @@ const coreMembers = [
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 });
-  const [daysLeft] = useState();
+  const [daysLeft, setDaysLeft] = useState(0); // ✅ Initialize state properly
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -142,16 +142,24 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    const eventDate = new Date("2025-02-20"); // Set your actual event date
+    const today = new Date();
+
+    const timeDiff = eventDate.getTime() - today.getTime();
+    const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+    setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
+  }, []); // Run only once
+
+  useEffect(() => {
     if (daysLeft === 1) {
       const deadline = new Date();
       deadline.setHours(23, 59, 59, 999);
       
       const countdownTimer = setInterval(() => {
         const now = new Date();
-        // const timeDiff = deadline - now;
-        const timeDiff = deadline.getTime() - now.getTime(); // ✅ Fix: Convert Date to number
+        const timeDiff = deadline.getTime() - now.getTime();
 
-        
         if (timeDiff <= 0) {
           clearInterval(countdownTimer);
           setCountdown({ hours: 0, minutes: 0, seconds: 0 });
@@ -165,7 +173,7 @@ function Home() {
 
       return () => clearInterval(countdownTimer);
     }
-  }, [daysLeft]);
+  }, [daysLeft]); // ✅ Trigger countdown only when `daysLeft` updates
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % events.length);
@@ -178,6 +186,8 @@ function Home() {
   const currentEvent = events[currentSlide];
   const showRegistration = currentEvent.registrationUrl && currentEvent.registrationDeadline;
   const showCountdown = daysLeft === 1;
+
+
 
   return (
     <>
