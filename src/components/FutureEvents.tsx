@@ -82,10 +82,13 @@ function FutureEvents() {
         <h1 className="text-4xl font-bold mb-12 text-center">Upcoming Events</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {futureEvents.map((event) => {
-            const daysRemaining = Math.ceil(
-              (new Date(event.registrationDeadline) - new Date()) / (1000 * 60 * 60 * 24)
-            );
+        {futureEvents.map((event, index) => {
+  if (!event?.registrationDeadline) return null; // Skip if no deadline
+
+  const daysRemaining = Math.ceil(
+    (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
+      (1000 * 60 * 60 * 24)
+  );
 
             return (
               <div

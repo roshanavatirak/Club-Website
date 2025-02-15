@@ -34,7 +34,10 @@ function EventDetails() {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const event = id ? eventDetails[id] : null;
+  // const event = id ? eventDetails[id] : null;
+  
+const event = id && eventDetails[id as keyof typeof eventDetails];
+
 
   if (!event) {
     return (

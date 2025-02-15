@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock, AlertCircle } from 'lucide-react';
 
@@ -69,7 +69,9 @@ function FutureEventDetails() {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  const event = id ? futureEventDetails[id] : null;
+// const event = id ? futureEventDetails[id] : null;
+const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : null;
+
 
   if (!event) {
     return (
@@ -95,10 +97,21 @@ function FutureEventDetails() {
     setCurrentSlide((prev) => (prev - 1 + event.images.length) % event.images.length);
   };
 
-  const deadlineDate = new Date(event.registrationDeadline);
-  const today = new Date();
-  const daysRemaining = Math.ceil((deadlineDate - today) / (1000 * 60 * 60 * 24));
+  // const deadlineDate = new Date(event.registrationDeadline);
+  // const today = new Date();
+  // const daysRemaining = Math.ceil((deadlineDate - today) / (1000 * 60 * 60 * 24));
 
+  const deadlineDate = event?.registrationDeadline ? new Date(event.registrationDeadline) : null;
+  const today = new Date();
+  
+  let daysRemaining: number = 0;
+  
+  if (deadlineDate instanceof Date && !isNaN(deadlineDate.getTime())) {
+    const todayUTC = new Date(today.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    const deadlineUTC = new Date(deadlineDate.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    
+    daysRemaining = Math.ceil((deadlineUTC.getTime() - todayUTC.getTime()) / (1000 * 60 * 60 * 24));
+  }
   return (
     <div className="min-h-screen pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -200,16 +213,17 @@ function FutureEventDetails() {
                   ))}
                 </ul>
 
-                {event.prizes && (
-                  <>
-                    <h3 className="text-xl font-semibold mb-3 mt-6">Prizes</h3>
-                    <ul className="list-disc ml-5 space-y-2 text-gray-700">
-                      {event.prizes.map((prize, index) => (
-                        <li key={index}>{prize}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
+                {event && "prizes" in event && event.prizes.length > 0 && (
+  <>
+    <h3 className="text-xl font-semibold mb-3 mt-6">Prizes</h3>
+    <ul className="list-disc ml-5 space-y-2 text-gray-700">
+      {event.prizes.map((prize, index) => (
+        <li key={index}>{prize}</li>
+      ))}
+    </ul>
+  </>
+)}
+
               </div>
             </div>
 
@@ -231,11 +245,11 @@ function FutureEventDetails() {
               <div className="inline-block relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 <a
-                  href={event.registrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg leading-none text-white font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
-                >
+                   href={(event as any ).registrationUrl}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="relative flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg leading-none text-white font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
+                   >
                   <Clock className="w-5 h-5 mr-2" />
                   Register Now
                   <span className="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded text-sm">
