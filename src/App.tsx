@@ -45,58 +45,59 @@ function App() {
           <Route path="/team" element={<Team />} />
         </Routes>
 
-        {/* Footer with Social Links */}
-        <footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
-        <div className="text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-300">
-            Created by{' '}
-            <a
-              href="https://www.linkedin.com/in/roshan-avatirak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-            >
-              Roshan Avatirak
-            </a>
-          </p>
-        </div>
-        
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
-              <div className="flex justify-center space-x-6 mb-8">
-                <a 
-                  href="https://wa.me/+919876543210" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-green-400 transition-colors"
-                  aria-label="Join our WhatsApp group"
-                >
-                  <MessageCircle className="w-8 h-8" />
-                </a>
-                <a 
-                  href="https://www.linkedin.com/company/sipna-coders-club" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-blue-400 transition-colors"
-                  aria-label="Follow us on LinkedIn"
-                >
-                  <Linkedin className="w-8 h-8" />
-                </a>
-                <a 
-                  href="https://www.instagram.com/sipna_coders_club" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-pink-400 transition-colors"
-                  aria-label="Follow us on Instagram"
-                >
-                  <Instagram className="w-8 h-8" />
-                </a>
-              </div>
-              <p className="text-gray-400">© 2024 Sipna Coders Club. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
+      {/* Footer with Social Links */}
+<footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
+  <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}
+    <p className="text-gray-600 dark:text-gray-300">
+      Created by{' '}
+      <a
+        href="https://www.linkedin.com/in/roshan-avatirak"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+      >
+        Roshan Avatirak
+      </a>
+    </p>
+  </div>
+
+  <div className="container mx-auto px-4">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
+      <div className="flex justify-center space-x-6 mb-8">
+        <a 
+          href="https://wa.me/+919876543210" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-green-400 transition-colors"
+          aria-label="Join our WhatsApp group"
+        >
+          <MessageCircle className="w-8 h-8" />
+        </a>
+        <a 
+          href="https://www.linkedin.com/company/sipna-coders-club" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-blue-400 transition-colors"
+          aria-label="Follow us on LinkedIn"
+        >
+          <Linkedin className="w-8 h-8" />
+        </a>
+        <a 
+          href="https://www.instagram.com/sipna_coders_club" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-pink-400 transition-colors"
+          aria-label="Follow us on Instagram"
+        >
+          <Instagram className="w-8 h-8" />
+        </a>
+      </div>
+      <p className="text-gray-400">© 2024 Sipna Coders Club. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
       </div>
     </Router>
   );
