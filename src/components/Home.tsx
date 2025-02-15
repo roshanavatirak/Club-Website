@@ -146,7 +146,7 @@ function Home() {
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
-    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
     setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
   }, []); // Run only once
