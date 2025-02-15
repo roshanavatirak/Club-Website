@@ -153,7 +153,7 @@ function Home() {
 
   useEffect(() => {
     if (daysLeft === 0) {
-      const deadline = new Date();
+      const deadline = new Date("2025-02-15");
       deadline.setHours(23, 59, 59, 999);
       
       const countdownTimer = setInterval(() => {
