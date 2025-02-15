@@ -123,12 +123,12 @@ const event = id && eventDetails[id as keyof typeof eventDetails];
           <p className="text-xl text-gray-600 mb-8">{event.date}</p>
 
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-semibold mb-4">About the Event</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-black">About the Event</h2>
             <p className="text-gray-700 mb-6">{event.description}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-3">Event Details</h3>
+                <h3 className="text-xl font-semibold mb-3 text-black">Event Details</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li><span className="font-medium">Venue:</span> {event.venue}</li>
                   <li><span className="font-medium">Participants:</span> {event.participants}</li>
@@ -144,7 +144,7 @@ const event = id && eventDetails[id as keyof typeof eventDetails];
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-3">Highlights</h3>
+                <h3 className="text-xl font-semibold mb-3 text-black">Highlights</h3>
                 <ul className="list-disc ml-5 space-y-2 text-gray-700">
                   {event.highlights.map((highlight, index) => (
                     <li key={index}>{highlight}</li>
@@ -154,7 +154,7 @@ const event = id && eventDetails[id as keyof typeof eventDetails];
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-3">Sponsors</h3>
+              <h3 className="text-xl font-semibold mb-3 text-black">Sponsors</h3>
               <div className="flex flex-wrap gap-4">
                 {event.sponsors.map((sponsor, index) => (
                   <span
