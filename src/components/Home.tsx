@@ -131,7 +131,7 @@ const coreMembers = [
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 });
-  const [daysLeft] = useState(15);
+  const [daysLeft] = useState();
   const navigate = useNavigate();
 
   useEffect(() => {
