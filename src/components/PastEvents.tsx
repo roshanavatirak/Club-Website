@@ -70,7 +70,7 @@ function PastEvents() {
 
         {/* Centering the grid layout similar to Upcoming Events */}
         <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-10xl">
 
             <div></div> {/* Empty first column for alignment */}
 
