@@ -150,16 +150,15 @@ function Home() {
 
     setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
   }, []); // Run only once
-
   useEffect(() => {
-    if (daysLeft === 1) {
+    if (daysLeft === 0) { // ✅ Start countdown when today is the event day
       const deadline = new Date("2025-02-15");
       deadline.setHours(23, 59, 59, 999);
-      
+  
       const countdownTimer = setInterval(() => {
         const now = new Date();
         const timeDiff = deadline.getTime() - now.getTime();
-
+  
         if (timeDiff <= 0) {
           clearInterval(countdownTimer);
           setCountdown({ hours: 0, minutes: 0, seconds: 0 });
@@ -170,11 +169,11 @@ function Home() {
           setCountdown({ hours, minutes, seconds });
         }
       }, 1000);
-
+  
       return () => clearInterval(countdownTimer);
     }
-  }, [daysLeft]); // ✅ Trigger countdown only when `daysLeft` updates
-
+  }, [daysLeft]); // ✅ Trigger countdown when `daysLeft` updates
+  
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % events.length);
   };
