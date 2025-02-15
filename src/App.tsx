@@ -47,6 +47,20 @@ function App() {
 
         {/* Footer with Social Links */}
         <footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
+        <div className="text-center mt-12">
+          <p className="text-gray-600 dark:text-gray-300">
+            Created by{' '}
+            <a
+              href="https://www.linkedin.com/in/roshan-avatirak"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+            >
+              Roshan Avatirak
+            </a>
+          </p>
+        </div>
+        
           <div className="container mx-auto px-4">
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
