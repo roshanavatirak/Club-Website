@@ -6,37 +6,17 @@ import techTitansImage from '../assets/team/techtitans.jpg';
 
 const pastEvents = [
   {
-    title: "Annual Hackathon 2023",
-    date: "November 15-16, 2023",
-    description: "A 24-hour coding marathon where students built innovative solutions."
-  },
-  {
-    title: "Web Development Workshop",
-    date: "October 5, 2023",
-    description: "Hands-on workshop covering modern web development technologies."
-  },
-  {
-    title: "AI/ML Bootcamp",
-    date: "September 20, 2023",
-    description: "Intensive training on artificial intelligence and machine learning concepts."
+    title: "A One-Day FlutterFlow Workshop 2024",
+    date: "25th October, 2024",
+    description: "Workshop Focus: Building Mobile Apps using FlutterFlow, a no-code/low-code platform."
   }
 ];
 
 const futureEvents = [
   {
-    title: "Coding Competition",
-    date: "March 15-16, 2024",
-    description: "Test your coding skills in our competitive programming contest."
-  },
-  {
-    title: "Tech Talk Series",
-    date: "April 5-7, 2024",
-    description: "Industry experts sharing insights on emerging technologies."
-  },
-  {
-    title: "Summer Bootcamp",
-    date: "May 1-15, 2024",
-    description: "Intensive training on web development, mobile apps, and cloud computing."
+    title: "Hackathon 2025",
+    date: "March 20, 2025",
+    description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don't miss this chance to network, learn, and showcase your skills."
   }
 ];
 
@@ -63,86 +43,86 @@ const events = [
 
 const coreMembers = [
   { 
-    name: "Alex Johnson", 
+    name: "Anand Tayde", 
     role: "President", 
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/alex-johnson",
-    instagram: "https://instagram.com/alexjohnson"
+    image: "https://media.licdn.com/dms/image/v2/D5635AQHw8cqRoC849Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1727291285065?e=1740117600&v=beta&t=r95hyjtnxiqUAhNcwN01Dy6EfA3eMh2TkiKnNvWBp0k",
+    linkedin: "https://www.linkedin.com/in/anandtayde/",
+    instagram: "https://www.instagram.com/mr_anand._.t/?hl=en"
   },
   { 
-    name: "Sarah Chen", 
+    name: "Pranav Raut", 
     role: "Vice President", 
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/sarah-chen",
     instagram: "https://instagram.com/sarahchen"
   },
   { 
-    name: "Mike Zhang", 
-    role: "Technical Lead", 
+    name: "Nishchay Sahu", 
+    role: "Treasuree", 
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/mike-zhang",
     instagram: "https://instagram.com/mikezhang"
   },
   { 
-    name: "Emma Davis", 
-    role: "Event Coordinator", 
+    name: "Disha Chauhan", 
+    role: "Secretary", 
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/emma-davis",
     instagram: "https://instagram.com/emmadavis"
   },
   { 
-    name: "David Kim", 
-    role: "Secretary", 
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
-    linkedin: "https://linkedin.com/in/david-kim",
+    name: "Roshan Avatirak", 
+    role: "Public Relation Officer(PRO)", 
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGbtd8AP6e4og/profile-displayphoto-shrink_400_400/B56ZSikwgdHsAg-/0/1737894333710?e=1744848000&v=beta&t=FnkvkaivVQXspeaGK1ElaQVXrDUdNLL_7K92pZZtrK4",
+    linkedin: "https://www.linkedin.com/in/roshan-avatirak/",
     instagram: "https://instagram.com/davidkim"
   },
   { 
-    name: "Lisa Wang", 
-    role: "Treasurer", 
+    name: "Vrushabh Selokar", 
+    role: "Public Relation Officer(PRO)", 
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/lisa-wang",
     instagram: "https://instagram.com/lisawang"
   },
   { 
-    name: "Tom Wilson", 
-    role: "Marketing Head", 
+    name: "Pratik Dhokne", 
+    role: "Technical Head", 
     image: "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/tom-wilson",
     instagram: "https://instagram.com/tomwilson"
   },
   { 
-    name: "Priya Patel", 
-    role: "Technical Writer", 
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400",
+    name: "Apurva Pande", 
+    role: "Executive Member(Head)", 
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/priya-patel",
     instagram: "https://instagram.com/priyapatel"
   },
   { 
-    name: "James Lee", 
-    role: "Web Master", 
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    name: "Prit Thombare", 
+    role: "Executive Member", 
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/james-lee",
     instagram: "https://instagram.com/jameslee"
   },
   { 
-    name: "Nina Rodriguez", 
-    role: "Design Lead", 
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+    name: "Ritesh Pawar", 
+    role: "Executive Member", 
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/nina-rodriguez",
     instagram: "https://instagram.com/ninarodriguez"
   },
   { 
-    name: "Ryan Chang", 
-    role: "Content Creator", 
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    name: "Nandita Sahu", 
+    role: "Executive Member", 
+    image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/ryan-chang",
     instagram: "https://instagram.com/ryanchang"
   },
   { 
-    name: "Maya Singh", 
-    role: "Community Manager", 
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400",
+    name: "Vaishnavi Jaiswal", 
+    role: "Executive Member", 
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400",
     linkedin: "https://linkedin.com/in/maya-singh",
     instagram: "https://instagram.com/mayasingh"
   }

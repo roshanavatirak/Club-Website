@@ -93,7 +93,7 @@ function App() {
           <Instagram className="w-8 h-8" />
         </a>
       </div>
-      <p className="text-gray-400">© 2024 Sipna Coders Club. All rights reserved.</p>
+      <p className="text-gray-400">© 2024-2026 Sipna Coders Club. All rights reserved.</p>
     </div>
   </div>
 </footer>
