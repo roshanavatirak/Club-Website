@@ -142,16 +142,16 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-17"); // Set your actual event date
+    const eventDate = new Date("2025-02-17T23:59:59"); // Set your actual event date
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
-    const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
     setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
   }, []); // Run only once
   useEffect(() => {
-    if (daysLeft === 1) { // ✅ Start countdown when today is the event day
+    if (daysLeft === 0) { // ✅ Start countdown when today is the event day
       const deadline = new Date("2025-02-17T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
@@ -269,7 +269,7 @@ function Home() {
               <Clock className="w-5 h-5 mr-2" />
               <span className="text-sm font-medium">Registration Open</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Hackathon 2024</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Hackathon 2025</h2>
             <p className="text-xl text-blue-100 mb-8">
               Showcase your coding skills, solve real-world problems, and win exciting prizes!
             </p>
