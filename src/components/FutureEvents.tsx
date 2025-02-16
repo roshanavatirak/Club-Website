@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
+import EventCountdown from "./EventCountdown";
+
 
 const futureEvents = [
   {
@@ -89,10 +91,10 @@ function FutureEvents() {
         {futureEvents.map((event, index) => {
   if (!event?.registrationDeadline) return null; // Skip if no deadline
 
-  const daysRemaining = Math.ceil(
-    (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
-      (1000 * 60 * 60 * 24)
-  );
+  // const daysRemaining = Math.ceil(
+  //   (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
+  //     (1000 * 60 * 60 * 24)
+  // );
 
             return (
               <div
@@ -113,6 +115,13 @@ function FutureEvents() {
                     <p className="text-red-600 text-sm md:text-base">Registration Deadline: {event.registrationDeadline}</p>
                   </div>
                   
+
+                    {/* Event Countdown Component */}
+                    <div className="mt-3">
+                      <EventCountdown registrationDeadline={event.registrationDeadline} />
+                    </div>
+
+
                   <div className="mt-3 flex justify-between items-center">
                     <button
                       onClick={() => navigate(`/future-events/${event.id}`)}
@@ -130,9 +139,9 @@ function FutureEvents() {
                       >
                         <Clock className="w-4 h-4 mr-2" />
                         Register
-                        <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
+                        {/* <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
                           {daysRemaining}d
-                        </span>
+                        </span> */}
                       </a>
                     )}
                   </div>
