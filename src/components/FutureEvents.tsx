@@ -1,5 +1,4 @@
-// import React from 'react';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
 
@@ -21,7 +20,7 @@ const futureEvents = [
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
-    registrationDeadline: 'February 16T23:59:59, 2025',
+    registrationDeadline: 'February 17, 2025',
     registrationUrl: 'https://unstop.com/hackathon'
   }
   // {
@@ -68,16 +67,6 @@ const futureEvents = [
 
 function FutureEvents() {
   const navigate = useNavigate();
-  const [currentTime, setCurrentTime] = useState(new Date().getTime());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date().getTime());
-    }, 1000); // Updates every second
-
-    return () => clearInterval(timer);
-  }, []);
-
 
   return (
     <div className="min-h-screen pt-24 pb-12">
@@ -100,29 +89,10 @@ function FutureEvents() {
         {futureEvents.map((event, index) => {
   if (!event?.registrationDeadline) return null; // Skip if no deadline
 
-  // const daysRemaining = Math.ceil(
-  //   (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
-  //     (1000 * 60 * 60 * 24)
-  // );
-
-  const deadlineTime = new Date(event.registrationDeadline).getTime();
-  const timeRemaining = deadlineTime - currentTime;
-  const daysRemaining = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
-  
-  let timeDisplay;
-  
-  if (timeRemaining < 0) {
-    timeDisplay = "Expired";
-  } else if (daysRemaining === 0) {
-    // If today is the deadline, show countdown in hh:mm:ss
-    const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
-    const seconds = Math.floor((timeRemaining / 1000) % 60);
-    timeDisplay = `${hours}h ${minutes}m ${seconds}s`;
-  } else {
-    // Show remaining days
-    timeDisplay = `${daysRemaining}d`;
-  }
+  const daysRemaining = Math.ceil(
+    (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
+      (1000 * 60 * 60 * 24)
+  );
 
             return (
               <div
