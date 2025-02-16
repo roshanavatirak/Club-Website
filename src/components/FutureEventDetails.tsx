@@ -137,7 +137,7 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
             </p>
             <p className="text-yellow-600">
               {daysRemaining > 0 
-                ? `Hurry up! Only ${daysRemaining} days remaining to register!`
+                ? `Hurry up! Less than ${daysRemaining} days remaining to register!`
                 : 'Registration closed'}
             </p>
             {/* <p className="text-yellow-600">
