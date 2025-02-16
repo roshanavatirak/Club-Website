@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import F1 from '../assets/flutterflow/F1.jpg';
+import F2 from '../assets/flutterflow/F2.jpg';
+import F3 from '../assets/flutterflow/F3.jpg';
+import F4 from '../assets/flutterflow/F4.jpg';
 
 const eventDetails = {
   '1': {
@@ -12,10 +16,10 @@ const eventDetails = {
     organizers: ['Sipna Coder’s Club'],
     sponsors: ['NA'],
     images: [
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200',
+      F1,
+      F2,
+      F3,
+      F4,
     ],
     highlights: [
       'Introduction to Flutter Flow – No-code app development basics',

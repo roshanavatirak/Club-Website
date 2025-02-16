@@ -23,7 +23,7 @@ const futureEvents = [
 const events = [
   {
     title: "Hackathon 2025",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
+    image: "https://upevents.nl/wp-content/blogs.dir/1/files/2020/05/Corona-Proof-Activities-Hackathon-1920x1080.png",
     date: "March 20, 2025",
     registrationUrl: "https://unstop.com/hackathon",
     registrationDeadline: "March 10, 2025"

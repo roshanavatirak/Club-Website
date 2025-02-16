@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import flutterflowImage from '../assets/team/workshop2024.jpg';
 
+
 const pastEvents = [
   {
     id: '1',
