@@ -78,7 +78,7 @@ const coreMembers = [
     // instagram: ""
   },
   { 
-    name: "Vrushabh Selokar", 
+    name: "Vrushabh Shelokar", 
     role: "Public Relation Officer(PRO)", 
     image: "https://media.licdn.com/dms/image/v2/D5603AQHbuAK0ekJikw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728185113978?e=1744848000&v=beta&t=ddzxTaobk_pYk1bIy3NvK51RuOMi-rOgl_MegpmEis4",
     linkedin: "https://www.linkedin.com/in/vrushabh-shelokar-786427314/",
@@ -149,7 +149,7 @@ function Home() {
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
     // setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
-    setDaysLeft(days >= 0 ? days : 0);
+    setDaysLeft(days > 0 ? days : 0);
 
   }, []); // Run only once
   useEffect(() => {
