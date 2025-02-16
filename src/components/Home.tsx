@@ -172,7 +172,7 @@ function Home() {
   
       return () => clearInterval(countdownTimer);
     }
-  }, [daysLeft]); // ✅ Trigger countdown when `daysLeft` updates
+  }, []); // ✅ Trigger countdown when `daysLeft` updates
   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % events.length);
