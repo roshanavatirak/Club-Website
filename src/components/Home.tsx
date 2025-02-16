@@ -159,7 +159,7 @@ function Home() {
         const now = new Date();
         const timeDiff = deadline.getTime() - now.getTime();
   
-        if (timeDiff <= 0) {
+        if (timeDiff < 0) {
           clearInterval(countdownTimer);
           setCountdown({ hours: 0, minutes: 0, seconds: 0 });
         } else {
