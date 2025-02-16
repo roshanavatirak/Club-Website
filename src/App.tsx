@@ -66,7 +66,7 @@ function App() {
       <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
       <div className="flex justify-center space-x-6 mb-8">
         <a 
-          href="https://wa.me/+919876543210" 
+          href="https://chat.whatsapp.com/HK6sis50Ru47cnuuW2gqxT" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="hover:text-green-400 transition-colors"
