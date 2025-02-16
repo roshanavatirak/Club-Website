@@ -142,7 +142,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-16T23:59:59"); // Set your actual event date
+    const eventDate = new Date("2025-02-17T23:59:59"); // Set your actual event date
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
@@ -155,7 +155,7 @@ function Home() {
   useEffect(() => {
   
     if (daysLeft <1) { // ✅ Start countdown when today is the event day
-      const deadline = new Date("2025-02-16T23:59:59");
+      const deadline = new Date("2025-02-17T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
       const countdownTimer = setInterval(() => {

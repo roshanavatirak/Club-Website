@@ -10,7 +10,7 @@ const futureEventDetails = {
     description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.",
     expectedParticipants: 200,
     venue: "CSE Seminar Hall and CC Lab, Sipna College of Engineering & Technology",
-    registrationDeadline: '2025-02-16 23:59:59',
+    registrationDeadline: '2025-02-17 23:59:59',
     registrationFee: 'Free',
     registrationUrl: 'https://unstop.com/hackathon',
     // organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
