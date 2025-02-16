@@ -153,12 +153,12 @@ function Home() {
 
   }, []); // Run only once
   useEffect(() => {
-    const eventDate = new Date("2025-02-17T23:59:59");
-  const today = new Date();
+  //   const eventDate = new Date("2025-02-17T23:59:59");
+  // const today = new Date();
 
-  const timeDiff = eventDate.getTime() - today.getTime();
-  const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    if (days <1) { // ✅ Start countdown when today is the event day
+  // const timeDiff = eventDate.getTime() - today.getTime();
+  // const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    if (daysLeft <1) { // ✅ Start countdown when today is the event day
       const deadline = new Date("2025-02-17T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
