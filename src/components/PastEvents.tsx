@@ -1,13 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import flutterflowImage from '../assets/team/workshop2024.jpg';
 
 const pastEvents = [
   {
     id: '1',
     title: 'FlutterFlow Wokshop',
     date: 'October 25, 2023',
-    thumbnail: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800',
+    thumbnail: flutterflowImage,
     description: 'The Flutter Flow Workshop provided hands-on experience in building a WhatsApp Clone, covering UI design and real-time chat using Flutter Flow’s no-code platform.',
     participants: '100+'
   },

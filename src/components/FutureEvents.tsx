@@ -19,7 +19,7 @@ const futureEvents = [
     id: '2',
     title: 'Hackathon 2025',
     date: 'March 20, 2025',
-    thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
+    thumbnail: 'https://upevents.nl/wp-content/blogs.dir/1/files/2020/05/Corona-Proof-Activities-Hackathon-1920x1080.png',
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
     registrationDeadline: '2025-02-16 23:59:59',

@@ -338,7 +338,7 @@ function Home() {
       <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 dark:text-white">About Sipna Coders Club</h2>
+            <h2 className="text-4xl font-bold mb-8 dark:text-white">About Sipna Coder’s Club</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-12">
               We are a community of passionate programmers, developers, and tech enthusiasts
               dedicated to fostering innovation and technical excellence.

@@ -135,18 +135,18 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
             <p className="font-medium text-yellow-700">
               Registration Deadline: {event.registrationDeadline}
             </p>
-            {/* <p className="text-yellow-600">
+            <p className="text-yellow-600">
               {daysRemaining > 0 
                 ? `Hurry up! Only ${daysRemaining} days remaining to register!`
                 : 'Registration closed'}
-            </p> */}
-            <p className="text-yellow-600">
+            </p>
+            {/* <p className="text-yellow-600">
   {daysRemaining >= 0 ? (
     <>Hurry up! Only <EventCountdown registrationDeadline={event.registrationDeadline} /> days remaining to register!</>
   ) : (
     'Registration closed'
   )}
-</p>
+</p> */}
 
           </div>
         </div>
