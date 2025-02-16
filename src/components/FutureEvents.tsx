@@ -22,7 +22,7 @@ const futureEvents = [
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
-    registrationDeadline: 'February 17, 2025',
+    registrationDeadline: '2025-02-16T23:59:59',
     registrationUrl: 'https://unstop.com/hackathon'
   }
   // {
@@ -116,10 +116,6 @@ function FutureEvents() {
                   </div>
                   
 
-                    {/* Event Countdown Component */}
-                    <div className="mt-3">
-                      <EventCountdown registrationDeadline={event.registrationDeadline} />
-                    </div>
 
 
                   <div className="mt-3 flex justify-between items-center">
@@ -131,18 +127,36 @@ function FutureEvents() {
                     </button>
                     
                     {event.registrationUrl && (
-                      <a
-                        href={event.registrationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white font-semibold hover:shadow-lg hover:-translate-y-1 transition-all"
-                      >
-                        <Clock className="w-4 h-4 mr-2" />
-                        Register
-                        {/* <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
-                          {daysRemaining}d
-                        </span> */}
-                      </a>
+                    //   <a
+                    //     href={event.registrationUrl}
+                    //     target="_blank"
+                    //     rel="noopener noreferrer"
+                    //     className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white font-semibold hover:shadow-lg hover:-translate-y-1 transition-all"
+                    //   >
+                    //     <Clock className="w-4 h-4 mr-2" />
+                    //     Register
+                    //     <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
+                    //       {/* {daysRemaining}d */}
+                          
+                    // {/* Event Countdown Component */}
+                   
+                    //   <EventCountdown registrationDeadline={event.registrationDeadline} />
+                   
+                    //     </span>
+                    //   </a>
+                    <a
+  href={event.registrationUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg text-white font-semibold hover:shadow-lg hover:-translate-y-1 transition-all"
+>
+  <Clock className="w-4 h-4 mr-2" />
+  Register
+  <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded text-sm">
+    <EventCountdown registrationDeadline={event.registrationDeadline} />
+  </span>
+</a>
+
                     )}
                   </div>
                 </div>
