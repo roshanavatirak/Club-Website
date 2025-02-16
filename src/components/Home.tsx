@@ -22,7 +22,7 @@ const futureEvents = [
 
 const events = [
   {
-    title: "Hackathon 2024",
+    title: "Hackathon 2025",
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
     date: "March 20, 2025",
     registrationUrl: "https://unstop.com/hackathon",
@@ -146,7 +146,7 @@ function Home() {
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
-    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
     setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
   }, []); // Run only once
