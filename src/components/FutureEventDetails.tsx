@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock, AlertCircle } from 'lucide-react';
+import EventCountdown from "./EventCountdown";
 
 const futureEventDetails = {
   '2': {
@@ -264,7 +265,8 @@ const event = id ? futureEventDetails[id as keyof typeof futureEventDetails] : n
                   <Clock className="w-5 h-5 mr-2" />
                   Register Now
                   <span className="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded text-sm">
-                    {daysRemaining} days left
+                    {/* {daysRemaining} days left */}
+                    <EventCountdown registrationDeadline={event.registrationDeadline} />
                   </span>
                 </a>
               </div>
