@@ -148,7 +148,9 @@ function Home() {
     const timeDiff = eventDate.getTime() - today.getTime();
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
-    setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
+    // setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
+    setDaysLeft(days >= 0 ? days : 0);
+
   }, []); // Run only once
   useEffect(() => {
     const eventDate = new Date("2025-02-17T23:59:59");
@@ -189,7 +191,7 @@ function Home() {
 
   const currentEvent = events[currentSlide];
   const showRegistration = currentEvent.registrationUrl && currentEvent.registrationDeadline;
-  const showCountdown = daysLeft === 1;
+  const showCountdown = daysLeft === 0;
 
 
 
