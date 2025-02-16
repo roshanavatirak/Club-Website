@@ -35,7 +35,7 @@ const EventCountdown: React.FC<EventCountdownProps> = ({ registrationDeadline })
   }, [registrationDeadline]); // ✅ Only depend on deadline, NOT `timeLeft`
 
   return (
-    <span className={timeLeft.type === "expired" ? "text-red-600" : "text-blue-600"}>
+    <span className={timeLeft.type === "expired" ? "text-red-600" : "text-white"}>
       {timeLeft.value}
     </span>
   );
