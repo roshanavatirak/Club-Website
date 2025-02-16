@@ -11,7 +11,7 @@ const EventCountdown: React.FC<EventCountdownProps> = ({ registrationDeadline })
     const timeRemaining = deadlineTime - currentTime;
 
     if (timeRemaining > 24 * 60 * 60 * 1000) {
-      const daysRemaining = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
+      const daysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
       return { type: "days", value: `${daysRemaining} days left` };
     } else if (timeRemaining > 0) {
       const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
