@@ -21,7 +21,7 @@ const futureEvents = [
     thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=800',
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
-    registrationDeadline: 'February 16, 2025',
+    registrationDeadline: 'February 16T23:59:59, 2025',
     registrationUrl: 'https://unstop.com/hackathon'
   }
   // {
@@ -111,9 +111,9 @@ function FutureEvents() {
   
   let timeDisplay;
   
-  if (timeRemaining <= 0) {
+  if (timeRemaining < 0) {
     timeDisplay = "Expired";
-  } else if (daysRemaining === 1) {
+  } else if (daysRemaining === 0) {
     // If today is the deadline, show countdown in hh:mm:ss
     const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
