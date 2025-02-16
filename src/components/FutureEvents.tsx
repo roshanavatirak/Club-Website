@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
 
@@ -67,6 +68,16 @@ const futureEvents = [
 
 function FutureEvents() {
   const navigate = useNavigate();
+  const [currentTime, setCurrentTime] = useState(new Date().getTime());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date().getTime());
+    }, 1000); // Updates every second
+
+    return () => clearInterval(timer);
+  }, []);
+
 
   return (
     <div className="min-h-screen pt-24 pb-12">
@@ -89,10 +100,29 @@ function FutureEvents() {
         {futureEvents.map((event, index) => {
   if (!event?.registrationDeadline) return null; // Skip if no deadline
 
-  const daysRemaining = Math.ceil(
-    (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
-      (1000 * 60 * 60 * 24)
-  );
+  // const daysRemaining = Math.ceil(
+  //   (new Date(event.registrationDeadline).getTime() - new Date().getTime()) /
+  //     (1000 * 60 * 60 * 24)
+  // );
+
+  const deadlineTime = new Date(event.registrationDeadline).getTime();
+  const timeRemaining = deadlineTime - currentTime;
+  const daysRemaining = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
+  
+  let timeDisplay;
+  
+  if (timeRemaining <= 0) {
+    timeDisplay = "Expired";
+  } else if (daysRemaining === 1) {
+    // If today is the deadline, show countdown in hh:mm:ss
+    const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+    const seconds = Math.floor((timeRemaining / 1000) % 60);
+    timeDisplay = `${hours}h ${minutes}m ${seconds}s`;
+  } else {
+    // Show remaining days
+    timeDisplay = `${daysRemaining}d`;
+  }
 
             return (
               <div
