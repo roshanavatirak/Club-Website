@@ -8,7 +8,7 @@ const pastEvents = [
   {
     id: '1',
     title: 'FlutterFlow Wokshop',
-    date: 'October 25, 2023',
+    date: 'October 25, 2024',
     thumbnail: flutterflowImage,
     description: 'The Flutter Flow Workshop provided hands-on experience in building a WhatsApp Clone, covering UI design and real-time chat using Flutter Flow’s no-code platform.',
     participants: '100+'
