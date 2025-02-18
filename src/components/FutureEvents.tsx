@@ -22,7 +22,7 @@ const futureEvents = [
     thumbnail: 'https://upevents.nl/wp-content/blogs.dir/1/files/2020/05/Corona-Proof-Activities-Hackathon-1920x1080.png',
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
-    registrationDeadline: '2025-02-17 23:59:59',
+    registrationDeadline: '2025-02-18 23:59:59',
     registrationUrl: 'https://unstop.com/hackathon'
   }
   // {
