@@ -25,7 +25,7 @@ const events = [
     title: "Hackathon 2025",
     image: "https://miro.medium.com/v2/resize:fit:1400/1*o2wIzRgrYbpJ_6HEVrn1-w.jpeg",
     date: "March 20, 2025",
-    registrationUrl: "https://unstop.com/hackathon",
+    registrationUrl: "https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl",
     registrationDeadline: "March 10, 2025"
   },
   {

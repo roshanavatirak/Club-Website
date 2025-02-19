@@ -23,7 +23,7 @@ const futureEvents = [
     description: 'Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
     registrationDeadline: '2025-02-18 23:59:59',
-    registrationUrl: 'https://unstop.com/hackathon'
+    registrationUrl: 'https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl'
   }
   // {
   //   id: '3',

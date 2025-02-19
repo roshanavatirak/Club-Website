@@ -12,7 +12,7 @@ const futureEventDetails = {
     venue: "CSE Seminar Hall and CC Lab, Sipna College of Engineering & Technology",
     registrationDeadline: '2025-02-18 23:59:59',
     registrationFee: 'Free',
-    registrationUrl: 'https://unstop.com/hackathon',
+    registrationUrl: 'https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl',
     // organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
     organizers: ['Sipna Coders Club'],
     sponsors: ['Unstop'],
