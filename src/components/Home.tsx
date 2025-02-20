@@ -26,7 +26,7 @@ const events = [
     image: "https://miro.medium.com/v2/resize:fit:1400/1*o2wIzRgrYbpJ_6HEVrn1-w.jpeg",
     date: "March 20, 2025",
     registrationUrl: "https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl",
-    registrationDeadline: "March 10, 2025"
+    registrationDeadline: "March 9, 2025"
   },
   {
     title: "FlutterFlow Workshop",
@@ -142,7 +142,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const eventDate = new Date("2025-02-18T23:59:59"); // Set your actual event date
+    const eventDate = new Date("2025-03-09T23:59:59"); // Set your actual event date
     const today = new Date();
 
     const timeDiff = eventDate.getTime() - today.getTime();
@@ -155,7 +155,7 @@ function Home() {
   useEffect(() => {
   
     if (daysLeft <1) { // ✅ Start countdown when today is the event day
-      const deadline = new Date("2025-02-18T23:59:59");
+      const deadline = new Date("2025-03-09T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
       const countdownTimer = setInterval(() => {
@@ -327,7 +327,7 @@ function Home() {
               </div>
               <div className="flex items-center text-yellow-300 text-sm">
                 <AlertCircle className="w-4 h-4 mr-2" />
-                <span>Limited slots available! Register before March 10, 2025</span>
+                <span>Limited slots available! Register before March 9, 2025</span>
               </div>
             </div>
           </div>
