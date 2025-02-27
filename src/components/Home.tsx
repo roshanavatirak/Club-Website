@@ -19,7 +19,7 @@ const pastEvents = [
 
 const futureEvents = [
   {
-    title: "Hackathon 2025",
+    title: "DevThon 2025",
     date: "March 20, 2025",
     description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don't miss this chance to network, learn, and showcase your skills."
   }
