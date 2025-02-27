@@ -116,7 +116,7 @@ const coreMembers = [
     role: "Executive Member", 
     image: ritesh,
     linkedin: "",
-    instagram: ""
+    instagram: "https://www.instagram.com/ritesh_deshmukh_26?utm_source=qr&igsh=aHhpM3Z0bnFjYzl0"
   },
   { 
     name: "Nandita Sahu", 
