@@ -5,9 +5,9 @@ import EventCountdown from "./EventCountdown";
 
 const futureEventDetails = {
   '2': {
-    title: 'Hackathon 2025',
+    title: 'DevThon 2025',
     date: 'March 20, 2025',
-    description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.",
+    description: "Join us for Devthon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don&apos;t miss this chance to network, learn, and showcase your skills.",
     expectedParticipants: 200,
     venue: "CSE Seminar Hall and CC Lab, Sipna College of Engineering & Technology",
     registrationDeadline: '2025-03-09 23:59:59',

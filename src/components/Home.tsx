@@ -4,6 +4,10 @@ import { Code2, Users, Calendar, Target, ChevronLeft, ChevronRight, Clock, Alert
 import flutterflowImage from '../assets/team/workshop2024.jpg';
 import techTitansImage from '../assets/team/techtitans.jpg';
 import anandimg from '../assets/team/anand.jpg'
+import vrushabhimg from '../assets/team/Vrushabh.jpg'
+import dishaimg from '../assets/team/Disha.jpg'
+import vaishnviimg from '../assets/team/vaishnavi.jpg'
+import apurvaimg from '../assets/team/Apurva.jpg'
 
 const pastEvents = [
   {
@@ -67,7 +71,7 @@ const coreMembers = [
   { 
     name: "Disha Chauhan", 
     role: "Secretary", 
-    image: "",
+    image: dishaimg,
     linkedin: "https://www.linkedin.com/in/disha-chauhan-50742b259/",
     instagram: "https://www.instagram.com/disha_chauhan04/?hl=en"
   },
@@ -81,8 +85,7 @@ const coreMembers = [
   { 
     name: "Vrushabh Shelokar", 
     role: "Public Relation Officer(PRO)", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQHbuAK0ekJikw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728185113978?e=1744848000&v=beta&t=ddzxTaobk_pYk1bIy3NvK51RuOMi-rOgl_MegpmEis4",
-    linkedin: "https://www.linkedin.com/in/vrushabh-shelokar-786427314/",
+    image: vrushabhimg,
     instagram: "https://www.instagram.com/vrush_459/?hl=en"
   },
   { 
@@ -95,7 +98,7 @@ const coreMembers = [
   { 
     name: "Apurva Pande", 
     role: "Executive Member(Head)", 
-    image: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
+    image: apurvaimg,
     linkedin: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
     instagram: "https://www.instagram.com/apurvapande27/?hl=en"
   },
@@ -123,7 +126,7 @@ const coreMembers = [
   { 
     name: "Vaishnavi Jaiswal", 
     role: "Executive Member", 
-    image: "https://media.licdn.com/dms/image/v2/D4E35AQGhL5Q8xJmP-w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1729869995146?e=1740225600&v=beta&t=warHxwb6dzxMMkyXdDnIhU2SbHY4fRvhir9y8x3m46k",
+    image: vaishnviimg,
     linkedin: "https://www.linkedin.com/in/vaishnavi-jaiswal-570915300/",
     instagram: "https://www.instagram.com/_vaishnavi_12.7/?hl=en"
   }
@@ -273,14 +276,14 @@ function Home() {
               <Clock className="w-5 h-5 mr-2" />
               <span className="text-sm font-medium">Registration Open</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join Hackathon 2025</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Join DevThon 2025</h2>
             <p className="text-xl text-blue-100 mb-8">
               Showcase your coding skills, solve real-world problems, and win exciting prizes!
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="text-2xl font-bold mb-2">₹22,000+</h3>
+                <h3 className="text-2xl font-bold mb-2">₹21,000+</h3>
                 <p className="text-blue-200">in Prizes</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

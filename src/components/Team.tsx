@@ -2,6 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Linkedin, Instagram } from 'lucide-react';
 import anandimg from '../assets/team/anand.jpg'
+import vrushabhimg from '../assets/team/Vrushabh.jpg'
+import dishaimg from '../assets/team/Disha.jpg'
+import vaishnviimg from '../assets/team/vaishnavi.jpg'
+import apurvaimg from '../assets/team/Apurva.jpg'
 
 const coreMembers = [
   { 
@@ -28,7 +32,7 @@ const coreMembers = [
   { 
     name: "Disha Chauhan", 
     role: "Secretary", 
-    image: "",
+    image: dishaimg,
     linkedin: "https://www.linkedin.com/in/disha-chauhan-50742b259/",
     instagram: "https://www.instagram.com/disha_chauhan04/?hl=en"
   },
@@ -42,7 +46,7 @@ const coreMembers = [
   { 
     name: "Vrushabh Shelokar", 
     role: "Public Relation Officer(PRO)", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQHbuAK0ekJikw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728185113978?e=1744848000&v=beta&t=ddzxTaobk_pYk1bIy3NvK51RuOMi-rOgl_MegpmEis4",
+    image: vrushabhimg,
     linkedin: "https://www.linkedin.com/in/vrushabh-shelokar-786427314/",
     instagram: "https://www.instagram.com/vrush_459/?hl=en"
   },
@@ -56,7 +60,7 @@ const coreMembers = [
   { 
     name: "Apurva Pande", 
     role: "Executive Member(Head)", 
-    image: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
+    image: apurvaimg,
     linkedin: "https://www.linkedin.com/in/apurva-pande-491b2129b/",
     instagram: "https://www.instagram.com/apurvapande27/?hl=en"
   },
@@ -84,7 +88,7 @@ const coreMembers = [
   { 
     name: "Vaishnavi Jaiswal", 
     role: "Executive Member", 
-    image: "https://media.licdn.com/dms/image/v2/D4E35AQGhL5Q8xJmP-w/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1729869995146?e=1740225600&v=beta&t=warHxwb6dzxMMkyXdDnIhU2SbHY4fRvhir9y8x3m46k",
+    image: vaishnviimg,
     linkedin: "https://www.linkedin.com/in/vaishnavi-jaiswal-570915300/",
     instagram: "https://www.instagram.com/_vaishnavi_12.7/?hl=en"
   }
