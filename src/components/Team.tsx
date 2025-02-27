@@ -6,6 +6,8 @@ import vrushabhimg from '../assets/team/Vrushabh.jpg'
 import dishaimg from '../assets/team/Disha.jpg'
 import vaishnviimg from '../assets/team/vaishnavi.jpg'
 import apurvaimg from '../assets/team/Apurva.jpg'
+import ritesh from '../assets/team/Ritesh.jpg'
+import nandita from '../assets/team/Nandita.jpg'
 
 const coreMembers = [
   { 
@@ -74,16 +76,16 @@ const coreMembers = [
   { 
     name: "Ritesh Pawar", 
     role: "Executive Member", 
-    image: "",
+    image: ritesh,
     linkedin: "",
     instagram: ""
   },
   { 
     name: "Nandita Sahu", 
     role: "Executive Member", 
-    image: "",
-    linkedin: "",
-    instagram: ""
+    image: nandita,
+    linkedin: "https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nandita-sahu-97923a333",
+    instagram: "https://www.instagram.com/__nanditasahu_?utm_source=qr&igsh=eTJrdTl1NmtyMHcy"
   },
   { 
     name: "Vaishnavi Jaiswal", 
