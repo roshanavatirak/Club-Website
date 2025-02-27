@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Code2, Users, Calendar, Target, ChevronLeft, ChevronRight, Clock, AlertCircle, Linkedin, Instagram } from 'lucide-react';
 import flutterflowImage from '../assets/team/workshop2024.jpg';
 import techTitansImage from '../assets/team/techtitans.jpg';
+import anandimg from '../assets/team/anand.jpg'
 
 const pastEvents = [
   {
@@ -45,7 +46,7 @@ const coreMembers = [
   { 
     name: "Anand Tayde", 
     role: "President", 
-    image: "https://media.licdn.com/dms/image/v2/D5635AQHw8cqRoC849Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1727291285065?e=1740117600&v=beta&t=r95hyjtnxiqUAhNcwN01Dy6EfA3eMh2TkiKnNvWBp0k",
+    image: anandimg,
     linkedin: "https://www.linkedin.com/in/anandtayde/",
     instagram: "https://www.instagram.com/mr_anand._.t/?hl=en"
   },
