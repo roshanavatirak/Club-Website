@@ -317,7 +317,7 @@ function Home() {
                   rel="noopener noreferrer"
                   className="relative flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg leading-none text-white font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
                 >
-                  Register for Hackathon
+                  Register for DevThon 2025
                   <span className="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded text-sm">
                     {showCountdown ? (
                       <span className="font-mono">
