@@ -8,6 +8,7 @@ import vaishnviimg from '../assets/team/vaishnavi.jpg'
 import apurvaimg from '../assets/team/Apurva.jpg'
 import ritesh from '../assets/team/Ritesh.jpg'
 import nandita from '../assets/team/Nandita.jpg'
+import nishchay from '../assets/team/nishchay.jpg'
 
 const coreMembers = [
   { 
@@ -27,7 +28,7 @@ const coreMembers = [
   { 
     name: "Nishchay Sahu", 
     role: "Treasuree", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQHAgIuHA_7dMw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1694451636949?e=1744848000&v=beta&t=sbIq5EoBDyRzAVhtpUpuZSglfc6VILArRZ6WdbLTBpA",
+    image: nishchay,
     linkedin: "https://www.linkedin.com/in/nishchay-sahu-648625282/",
     instagram: "https://www.instagram.com/_nishchay_sahu/?hl=en"
   },
