@@ -27,7 +27,7 @@ const coreMembers = [
   },
   { 
     name: "Nishchay Sahu", 
-    role: "Treasuree", 
+    role: "Treasurer", 
     image: nishchay,
     linkedin: "https://www.linkedin.com/in/nishchay-sahu-648625282/",
     instagram: "https://www.instagram.com/_nishchay_sahu/?hl=en"
