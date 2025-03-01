@@ -290,7 +290,7 @@ function Home() {
                 <p className="text-blue-200">in Prizes</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <h3 className="text-2xl font-bold mb-2">8 Hours</h3>
+                <h3 className="text-2xl font-bold mb-2">6 Hours</h3>
                 <p className="text-blue-200">of Coding</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
