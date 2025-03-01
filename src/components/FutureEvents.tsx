@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
 import EventCountdown from "./EventCountdown";
+import DevThon2025 from '../assets/DevThon 2025/devThon logo.png'
 
 
 const futureEvents = [
@@ -19,10 +20,10 @@ const futureEvents = [
     id: '2',
     title: 'DevThon 2025',
     date: 'March 20, 2025',
-    thumbnail: 'https://upevents.nl/wp-content/blogs.dir/1/files/2020/05/Corona-Proof-Activities-Hackathon-1920x1080.png',
+    thumbnail: DevThon2025,
     description: 'Join us for DevThon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don’t miss this chance to network, learn, and showcase your skills.',
     expectedParticipants: 200,
-    registrationDeadline: '2025-03-09 23:59:59',
+    registrationDeadline: '2025-03-10 23:59:59',
     registrationUrl: 'https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl'
   }
   // {
