@@ -60,7 +60,7 @@ const coreMembers = [
   { 
     name: "Pranav Raut", 
     role: "Vice President", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQEGnq1TXMaP1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720788756740?e=1744848000&v=beta&t=dV8EFQedg9h-x_auWIjNtz4WGAGtPGXf1ThzCcE042k",
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQHZTxv65cbZ5Q/profile-displayphoto-shrink_400_400/B4EZVkWWgkHUAg-/0/1741145337418?e=1747267200&v=beta&t=pdyhgo44vuzG9BZ_k2K8uxayPXxxK0qpfACJXmODA44",
     linkedin: "https://www.linkedin.com/in/rautpranav13/",
     instagram: "https://www.instagram.com/raut.pranav13/?hl=en"
   },
@@ -108,7 +108,7 @@ const coreMembers = [
   { 
     name: "Prit Thombare", 
     role: "Executive Member", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQFM6AlD09epCQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721844801475?e=1744848000&v=beta&t=qhuBs2ttRL5MO7KC3mxDfiUw5uHGJ0HpmBBM0J42jXI",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHu_La6ZByesg/profile-displayphoto-shrink_400_400/B56ZVRiEk6GsAk-/0/1740829642741?e=1747267200&v=beta&t=j8HEGoMnh9KFaekpjdk_RdhvKfqq8O8-MbGcpkJCEY0",
     linkedin: "https://www.linkedin.com/in/prit-thombare-6b741a296/",
     instagram: "https://www.instagram.com/gaauureeee/?hl=en"
   },
