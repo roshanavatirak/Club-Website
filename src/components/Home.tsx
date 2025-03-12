@@ -220,7 +220,7 @@ function Home() {
                   <div className="text-center text-white">
                     <h1 className="text-5xl font-bold mb-4">{event.title}</h1>
                     <p className="text-xl mb-8">{event.date}</p>
-                    {showRegistration && (
+                    {/* {showRegistration && (
                       <div className="space-y-4">
                         <div className="inline-block relative group">
                           <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
@@ -249,7 +249,7 @@ function Home() {
                           ⚡ Limited slots available! Register before {currentEvent.registrationDeadline}
                         </p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
