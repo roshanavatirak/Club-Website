@@ -203,7 +203,7 @@ function Home() {
       {/* Hero Section with Slider */}
       <div className="relative h-screen">
         <div className="absolute inset-0">
-          {events.map((event, index) => (
+          {/* {events.map((event, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -254,7 +254,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
         <button
           onClick={prevSlide}
@@ -271,7 +271,7 @@ function Home() {
       </div>
 
       {/* Registration Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white relative overflow-hidden">
+      {/* <section className="py-20 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
@@ -339,7 +339,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
