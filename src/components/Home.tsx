@@ -203,7 +203,7 @@ function Home() {
       {/* Hero Section with Slider */}
       <div className="relative h-screen">
         <div className="absolute inset-0">
-          {/* {events.map((event, index) => (
+          {events.map((event, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -254,7 +254,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
         <button
           onClick={prevSlide}
