@@ -23,7 +23,7 @@ const EventCountdown: React.FC<EventCountdownProps> = ({ registrationDeadline })
     }
   };
 
-  // ✅ Corrected: Removed dependency issue
+  //  Corrected: Removed dependency issue
   const [timeLeft, setTimeLeft] = useState<{ type: string; value: string }>(calculateTimeRemaining());
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const EventCountdown: React.FC<EventCountdownProps> = ({ registrationDeadline })
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [registrationDeadline]); // ✅ Only depend on deadline, NOT `timeLeft`
+  }, [registrationDeadline]); //  Only depend on deadline, NOT `timeLeft`
 
   return (
     <span className={timeLeft.type === "expired" ? "text-red-600" : "text-white"}>

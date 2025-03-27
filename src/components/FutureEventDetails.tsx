@@ -13,7 +13,7 @@ const futureEventDetails = {
     registrationDeadline: '2025-03-12 23:59:59',
     registrationFee: 'Free',
     registrationUrl: 'https://unstop.com/p/sipna-hackathon-sipna-college-of-engineering-and-technology-amravati-1405396?lb=lz98p4G0&utm_medium=Share&utm_source=shortUrl',
-    // organizers: ['Alex Johnson', 'Sarah Chen', 'Mike Zhang'],
+    
     organizers: ['Sipna Coders Club'],
     sponsors: ['Unstop'],
     images: [
@@ -41,33 +41,7 @@ const futureEventDetails = {
       'Special goodies by Unstop*',
     ],
   },
-  // '1': {
-  //   title: 'Tech Talk Series',
-  //   date: 'April 5-7, 2024',
-  //   description: `A three-day series of insightful talks from industry experts covering emerging technologies,
-  //   best practices, and career guidance. Network with professionals and gain valuable insights into the tech industry.`,
-  //   expectedParticipants: 150,
-  //   venue: 'Sipna College Auditorium',
-  //   registrationDeadline: 'April 1, 2024',
-  //   registrationFee: '₹300',
-  //   organizers: ['Emma Davis', 'David Kim', 'Lisa Wang'],
-  //   sponsors: ['TechHub', 'InnovateX', 'FutureLearn'],
-  //   images: [
-  //     'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=1200',
-  //     'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
-  //     'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
-  //   ],
-  //   schedule: [
-  //     'Day 1: Web Technologies',
-  //     'Day 2: AI and Machine Learning',
-  //     'Day 3: Cloud Computing and DevOps',
-  //   ],
-  //   speakers: [
-  //     'Dr. Sarah Smith - AI Research Lead',
-  //     'John Doe - Senior Software Architect',
-  //     'Jane Wilson - Cloud Solutions Expert',
-  //   ],
-  // },
+  
 };
 
 function FutureEventDetails() {

@@ -138,7 +138,7 @@ const coreMembers = [
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [countdown, setCountdown] = useState({ hours: 0, minutes: 0, seconds: 0 });
-  const [daysLeft, setDaysLeft] = useState(0); // ✅ Initialize state properly
+  const [daysLeft, setDaysLeft] = useState(0); //  Initialize state properly
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -155,13 +155,13 @@ function Home() {
     const timeDiff = eventDate.getTime() - today.getTime();
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
-    // setDaysLeft(days > 0 ? days : 0); // ✅ Prevent negative values
+    // setDaysLeft(days > 0 ? days : 0); //  Prevent negative values
     setDaysLeft(days > 0 ? days : 0);
 
   }, []); // Run only once
   useEffect(() => {
   
-    if (daysLeft <1) { // ✅ Start countdown when today is the event day
+    if (daysLeft <1) { //  Start countdown when today is the event day
       const deadline = new Date("2025-03-12T23:59:59");
       deadline.setHours(23, 59, 59, 999);
   
@@ -182,7 +182,7 @@ function Home() {
   
       return () => clearInterval(countdownTimer);
     }
-  }, [daysLeft]); // ✅ Trigger countdown when `daysLeft` updates
+  }, [daysLeft]); // Trigger countdown when `daysLeft` updates
   
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % events.length);

@@ -30,7 +30,7 @@ const eventDetails = {
       
       ],
   },
-  // Add more event details as needed
+  // Add more
 };
 
 function EventDetails() {
