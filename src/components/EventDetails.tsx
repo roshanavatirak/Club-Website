@@ -27,10 +27,31 @@ const eventDetails = {
       'Integrated real-time chat functionality with backend support',
       'Explored database integration and scalability best practices',
       'Hands-on coding exercises & live project implementation',
-      
-      ],
+    ],
   },
-  // Add more
+
+  '2': {
+    title: 'DevThon 2025',
+    date: 'March 20, 2025',
+    description: `DevThon 2025 was a high-energy, innovation-packed offline hackathon where 40 selected teams collaborated to solve real-world problems. From brainstorming unique ideas to delivering functional prototypes, the event was a true test of creativity, teamwork, and technical expertise. Participants networked with peers, mentors, and industry professionals, unlocking new opportunities for growth and learning.`,
+    participants: '200+',
+    venue: 'MBA Seminar Hall and EXTC Lab, Sipna College of Engineering & Technology',
+    organizers: ['Sipna Coders Club'],
+    sponsors: ['Unstop'],
+    images: [
+      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200',
+    ],
+    highlights: [
+      '40+ top teams shortlisted from national-level submissions',
+      'Real-world problem statements and intense 12-hour development sprint',
+      'Mentorship from industry experts and professors during the hackathon',
+      'Exciting prize pool including ₹11,000 for the winner and exclusive goodies from Unstop',
+      'Platform to showcase projects, collaborate, and gain recognition across institutions',
+    ],
+  },
 };
 
 function EventDetails() {
