@@ -7,14 +7,22 @@ import flutterflowImage from '../assets/team/workshop2024.jpg';
 const pastEvents = [
   {
     id: '1',
-    title: 'FlutterFlow Wokshop',
+    title: 'FlutterFlow Workshop',
     date: 'October 25, 2024',
     thumbnail: flutterflowImage,
     description: 'The Flutter Flow Workshop provided hands-on experience in building a WhatsApp Clone, covering UI design and real-time chat using Flutter Flow’s no-code platform.',
     participants: '100+'
   },
-  
+  {
+    id: '2',
+    title: 'DevThon 2025',
+    date: 'March 20, 2025',
+    thumbnail:flutterflowImage , // Make sure you import or define devthonImage
+    description: 'DevThon 2025 brought together tech enthusiasts to collaborate, innovate, and create real-world impactful solutions. From brainstorming to building, it was an unforgettable hackathon experience.',
+    participants: '200+'
+  }
 ];
+
 function PastEvents() {
   const navigate = useNavigate();
 

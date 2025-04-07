@@ -22,9 +22,12 @@ const pastEvents = [
 
 const futureEvents = [
   {
-    title: "DevThon 2025",
-    date: "March 20, 2025",
-    description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don't miss this chance to network, learn, and showcase your skills."
+    title:"",
+    date:""
+
+    // title: "DevThon 2025",
+    // date: "March 20, 2025",
+    // description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don't miss this chance to network, learn, and showcase your skills."
   }
 ];
 
@@ -372,7 +375,7 @@ function Home() {
       </section>
 
       {/* Events Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      {/* <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 dark:text-white">Events</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -406,7 +409,70 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      {/* Events Section */}
+<section className="py-20 bg-gray-50 dark:bg-gray-900">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-center mb-12 dark:text-white">Events</h2>
+    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      
+      {/* Past Events */}
+      <div
+        className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg cursor-pointer hover:shadow-2xl transition duration-300"
+        onClick={() => navigate('/past-events')}
+      >
+        <Calendar className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4 mx-auto" />
+        <h3 className="text-2xl font-semibold mb-4 text-center dark:text-white">Past Events</h3>
+
+        {pastEvents.length === 0 ? (
+          <p className="text-center text-gray-500 dark:text-gray-400">No past events available yet.</p>
+        ) : (
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+            {pastEvents.slice(0, 3).map((event, index) => (
+              <li
+                key={index}
+                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                <span className="font-medium">{event.title}</span>
+                <div className="text-sm">{event.date}</div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      {/* Upcoming Events */}
+      <div
+        className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+        onClick={() => navigate('/future-events')}
+      >
+        <Calendar className="w-12 h-12 text-green-600 dark:text-green-400 mb-4 mx-auto" />
+        <h3 className="text-2xl font-semibold mb-4 text-center dark:text-white">Upcoming Events</h3>
+
+        {futureEvents.length === 0 ? (
+          <p className="text-center text-gray-500 dark:text-gray-400 italic">
+            No upcoming events for now. Stay tuned for exciting announcements!
+          </p>
+        ) : (
+          <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+            {futureEvents.slice(0, 3).map((event, index) => (
+              <li
+                key={index}
+                className="hover:text-green-600 dark:hover:text-green-400 transition-colors"
+              >
+                <span className="font-medium">{event.title}</span>
+                <div className="text-sm">{event.date}</div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Core Members Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
