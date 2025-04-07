@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import flutterflowImage from '../assets/team/workshop2024.jpg';
+import Devthon2025Main from '../assets/DevThon 2025/DevThon2025Main.jpg'
 
 const pastEvents = [
   {
@@ -17,7 +18,7 @@ const pastEvents = [
     id: '2',
     title: 'DevThon 2025',
     date: 'March 20, 2025',
-    thumbnail: flutterflowImage, // Replace with actual devthon image later
+    thumbnail: Devthon2025Main, // Replace with actual devthon image later
     description:
       'DevThon 2025 brought together tech enthusiasts to collaborate, innovate, and create real-world impactful solutions. From brainstorming to building, it was an unforgettable hackathon experience.',
     participants: '550+',
