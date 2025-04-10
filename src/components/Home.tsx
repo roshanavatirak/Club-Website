@@ -40,7 +40,7 @@ const events = [
   {
     title: "Meet the Coder Club",
     image: CoreTeam,
-    // date: "25th October, 2026"
+    date: "Year: 2024–25"
   
   },
   {
