@@ -25,6 +25,8 @@ const pastEvents = [
   },
 ];
 
+
+
 function PastEvents() {
   const navigate = useNavigate();
 

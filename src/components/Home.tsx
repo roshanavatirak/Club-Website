@@ -12,24 +12,29 @@ import ritesh from '../assets/team/Ritesh.jpg'
 import nandita from '../assets/team/Nandita.jpg'
 import nishchay from '../assets/team/nishchay.jpg'
 
+
+type Event = {
+  title: string;
+  date: string;
+  description: string;
+};
+
 const pastEvents = [
   {
     title: "A One-Day FlutterFlow Workshop 2024",
     date: "25th October, 2024",
     description: "Workshop Focus: Building Mobile Apps using FlutterFlow, a no-code/low-code platform."
-  }
-];
-
-const futureEvents = [
+  },
   {
-    title:"",
-    date:""
-
-    // title: "DevThon 2025",
-    // date: "March 20, 2025",
-    // description: "Join us for Hackathon 2025, where creativity meets innovation! Collaborate with teams, brainstorm unique ideas, and work on projects that make a real-world impact. Don't miss this chance to network, learn, and showcase your skills."
+    title: "DevThon 2025",
+    date: "20th March, 2025",
+    description: "A hackathon focused on building real-world solutions through collaborative innovation and cutting-edge technology."
   }
 ];
+
+
+const futureEvents: Event[] = [];
+
 
 const events = [
   {
@@ -417,6 +422,8 @@ function Home() {
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold text-center mb-12 dark:text-white">Events</h2>
     <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+      
       
       {/* Past Events */}
       <div
