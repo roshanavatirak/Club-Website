@@ -38,6 +38,12 @@ const futureEvents: Event[] = [];
 
 const events = [
   {
+    title: "Meet the Coder Club",
+    image: CoreTeam,
+    // date: "25th October, 2026"
+  
+  },
+  {
     title: "DevThon 2025",
     image: "https://miro.medium.com/v2/resize:fit:1400/1*o2wIzRgrYbpJ_6HEVrn1-w.jpeg",
     date: "March 20, 2025",
@@ -49,12 +55,7 @@ const events = [
     image: flutterflowImage,
     date: "October 25, 2024"
   },
-  {
-    title: "Tech Titans",
-    image: CoreTeam,
-    // date: "25th October, 2026"
-  
-  }
+ 
 ];
 
 const coreMembers = [
