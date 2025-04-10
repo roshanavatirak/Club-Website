@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { MessageCircle, Instagram, Linkedin } from 'lucide-react';
+
+// Components
 import Home from './components/Home';
 import PastEvents from './components/PastEvents';
 import FutureEvents from './components/FutureEvents';
@@ -9,6 +11,7 @@ import FutureEventDetails from './components/FutureEventDetails';
 import About from './components/About';
 import Team from './components/Team';
 import Navbar from './components/Navbar';
+import ScrollToTop from './ScrollToTop.js';
 
 function App() {
   const [isDark, setIsDark] = useState(() => {
@@ -32,9 +35,13 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className={`min-h-screen ${isDark ? 'dark bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'} transition-colors duration-300`}>
+        
+        {/* Navbar */}
         <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
 
+        {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/past-events" element={<PastEvents />} />
@@ -45,62 +52,171 @@ function App() {
           <Route path="/team" element={<Team />} />
         </Routes>
 
-      {/* Footer with Social Links */}
-<footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
-  <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}
-    <p className="text-white">
-      Created by{' '}
-      <a
-        href="https://www.linkedin.com/in/roshan-avatirak"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-      >
-        Roshan Avatirak
-      </a>
-    </p>
-  </div>
+        {/* Footer */}
+        <footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
+          <div className="text-center mt-12 mb-12">
+            <p className="text-white">
+              Created by{' '}
+              <a
+                href="https://www.linkedin.com/in/roshan-avatirak"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+              >
+                Roshan Avatirak
+              </a>
+            </p>
+          </div>
 
-  <div className="container mx-auto px-4">
-    <div className="text-center">
-      <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
-      <div className="flex justify-center space-x-6 mb-8">
-        <a 
-          href="https://chat.whatsapp.com/HK6sis50Ru47cnuuW2gqxT" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="hover:text-green-400 transition-colors"
-          aria-label="Join our WhatsApp group"
-        >
-          <MessageCircle className="w-8 h-8" />
-        </a>
-        <a 
-          href="https://www.linkedin.com/company/sipna-coders-club" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="hover:text-blue-400 transition-colors"
-          aria-label="Follow us on LinkedIn"
-        >
-          <Linkedin className="w-8 h-8" />
-        </a>
-        <a 
-          href="https://www.instagram.com/sipna_coders_club" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="hover:text-pink-400 transition-colors"
-          aria-label="Follow us on Instagram"
-        >
-          <Instagram className="w-8 h-8" />
-        </a>
-      </div>
-      <p className="text-gray-400">© 2024-2026 Sipna Coders Club. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
+              <div className="flex justify-center space-x-6 mb-8">
+                <a
+                  href="https://chat.whatsapp.com/HK6sis50Ru47cnuuW2gqxT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400 transition-colors"
+                  aria-label="Join our WhatsApp group"
+                >
+                  <MessageCircle className="w-8 h-8" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/sipna-coders-club"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <Linkedin className="w-8 h-8" />
+                </a>
+                <a
+                  href="https://www.instagram.com/sipna_coders_club"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-400 transition-colors"
+                  aria-label="Follow us on Instagram"
+                >
+                  <Instagram className="w-8 h-8" />
+                </a>
+              </div>
+              <p className="text-gray-400">© 2024-2026 Sipna Coders Club. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </Router>
   );
 }
 
 export default App;
+
+
+// import React, { useState, useEffect } from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { MessageCircle, Instagram, Linkedin } from 'lucide-react';
+// import Home from './components/Home';
+// import PastEvents from './components/PastEvents';
+// import FutureEvents from './components/FutureEvents';
+// import EventDetails from './components/EventDetails';
+// import FutureEventDetails from './components/FutureEventDetails';
+// import About from './components/About';
+// import Team from './components/Team';
+// import Navbar from './components/Navbar';
+// import ScrollToTop from './ScrollToTop';
+
+
+// function App() {
+//   const [isDark, setIsDark] = useState(() => {
+//     const savedTheme = localStorage.getItem('theme');
+//     return savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+//   });
+
+//   useEffect(() => {
+//     if (isDark) {
+//       document.documentElement.classList.add('dark');
+//       localStorage.setItem('theme', 'dark');
+//     } else {
+//       document.documentElement.classList.remove('dark');
+//       localStorage.setItem('theme', 'light');
+//     }
+//   }, [isDark]);
+
+//   const toggleDarkMode = () => {
+//     setIsDark(!isDark);
+//   };
+
+//   return (
+//     <Router>
+//       <div className={`min-h-screen ${isDark ? 'dark bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'} transition-colors duration-300`}>
+//         <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
+
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/past-events" element={<PastEvents />} />
+//           <Route path="/past-events/:id" element={<EventDetails />} />
+//           <Route path="/future-events" element={<FutureEvents />} />
+//           <Route path="/future-events/:id" element={<FutureEventDetails />} />
+//           <Route path="/about" element={<About />} />
+//           <Route path="/team" element={<Team />} />
+//         </Routes>
+
+//       {/* Footer with Social Links */}
+// <footer className={`${isDark ? 'bg-gray-800 text-gray-100' : 'bg-gray-900 text-white'} py-12`}>
+//   <div className="text-center mt-12 mb-12"> {/* Added mb-12 for spacing */}
+//     <p className="text-white">
+//       Created by{' '}
+//       <a
+//         href="https://www.linkedin.com/in/roshan-avatirak"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+//       >
+//         Roshan Avatirak
+//       </a>
+//     </p>
+//   </div>
+
+//   <div className="container mx-auto px-4">
+//     <div className="text-center">
+//       <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
+//       <div className="flex justify-center space-x-6 mb-8">
+//         <a 
+//           href="https://chat.whatsapp.com/HK6sis50Ru47cnuuW2gqxT" 
+//           target="_blank" 
+//           rel="noopener noreferrer" 
+//           className="hover:text-green-400 transition-colors"
+//           aria-label="Join our WhatsApp group"
+//         >
+//           <MessageCircle className="w-8 h-8" />
+//         </a>
+//         <a 
+//           href="https://www.linkedin.com/company/sipna-coders-club" 
+//           target="_blank" 
+//           rel="noopener noreferrer" 
+//           className="hover:text-blue-400 transition-colors"
+//           aria-label="Follow us on LinkedIn"
+//         >
+//           <Linkedin className="w-8 h-8" />
+//         </a>
+//         <a 
+//           href="https://www.instagram.com/sipna_coders_club" 
+//           target="_blank" 
+//           rel="noopener noreferrer" 
+//           className="hover:text-pink-400 transition-colors"
+//           aria-label="Follow us on Instagram"
+//         >
+//           <Instagram className="w-8 h-8" />
+//         </a>
+//       </div>
+//       <p className="text-gray-400">© 2024-2026 Sipna Coders Club. All rights reserved.</p>
+//     </div>
+//   </div>
+// </footer>
+
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
