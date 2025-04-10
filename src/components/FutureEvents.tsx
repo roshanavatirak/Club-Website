@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Clock } from 'lucide-react';
+import { MessageCircle, Instagram, Linkedin } from 'lucide-react';
+
 
 // Define a type for the event object
 interface EventData {
@@ -47,21 +49,42 @@ function FutureEvents() {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-3xl">
             <div></div> {/* Empty first column */}
-
             {futureEvents.length === 0 ? (
-              <div className="col-span-full text-center text-gray-500 space-y-2">
-                <h2 className="text-2xl font-semibold text-gray-700">No Upcoming Events</h2>
-                <p className="text-base">
-                  Looks like there are no events scheduled right now. But don’t worry, exciting opportunities are just around the corner!
-                </p>
-                <p className="text-sm italic">
-                  Stay connected with Sipna Coders Club — something amazing is brewing behind the scenes.
-                </p>
-                <p className="text-sm">
-                  Follow us on social media or check back soon to be the first to know about future workshops, hackathons, and more!
-                </p>
-              </div>
-            ) : (
+  <div className="col-span-full text-center text-gray-500 space-y-4">
+    <h2 className="text-2xl font-semibold text-gray-700">No Upcoming Events</h2>
+    <p className="text-base">
+      Looks like there are no events scheduled right now. But don’t worry, exciting opportunities are just around the corner!
+    </p>
+    <p className="text-sm italic">
+      Stay connected with Sipna Coders Club — something amazing is brewing behind the scenes.
+    </p>
+    <p className="text-sm">
+      Follow us on social media or check back soon to be the first to know about future workshops, hackathons, and more!
+    </p>
+
+    {/* Social Links */}
+    <div className="flex justify-center items-center gap-6 pt-4">
+      <a
+        href="https://www.instagram.com/sipna_coders_club"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-pink-500 hover:text-pink-600 transition-colors"
+      >
+        <Instagram className="w-5 h-5" />
+        <span className="text-sm font-medium">Sipna Coders Club</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/sipna-coders-club"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+      >
+        <Linkedin className="w-5 h-5" />
+        <span className="text-sm font-medium">Sipna Coders Club</span>
+      </a>
+    </div>
+  </div>
+)  : (
               futureEvents.map((event) => (
                 <div
                   key={event.id}
