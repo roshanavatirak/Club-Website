@@ -28,13 +28,14 @@ const eventDetails = {
       'Explored database integration and scalability best practices',
       'Hands-on coding exercises & live project implementation',
     ],
+    driveLink:'',
   },
 
   '2': {
     title: 'DevThon 2025',
     date: 'March 20, 2025',
     description: `DevThon 2025 was a high-energy, innovation-packed offline hackathon where 40 selected teams collaborated to solve real-world problems. From brainstorming unique ideas to delivering functional prototypes, the event was a true test of creativity, teamwork, and technical expertise. Participants networked with peers, mentors, and industry professionals, unlocking new opportunities for growth and learning.`,
-    participants: '200+',
+    participants: '550+',
     venue: 'MBA Seminar Hall and EXTC Lab, Sipna College of Engineering & Technology',
     organizers: ['Sipna Coders Club'],
     sponsors: ['Unstop'],
@@ -51,6 +52,7 @@ const eventDetails = {
       'Exciting prize pool including ₹11,000 for the winner and exclusive goodies from Unstop',
       'Platform to showcase projects, collaborate, and gain recognition across institutions',
     ],
+    driveLink:'https://drive.google.com/drive/folders/12jffFsut0kmKETxqDX5oc-8I9GRQnI74?usp=sharing',
   },
 };
 
@@ -191,6 +193,21 @@ const event = id && eventDetails[id as keyof typeof eventDetails];
                 ))}
               </div>
             </div>
+
+            {event.driveLink && (
+  <div className="mt-8">
+    <h3 className="text-xl font-semibold mb-3 text-black">📸 Full Event Gallery</h3>
+    <a
+      href={event.driveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300"
+    >
+      View All Event Photos on Google Drive
+    </a>
+  </div>
+)}
+
           </div>
         </div>
       </div>
