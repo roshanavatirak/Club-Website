@@ -26,7 +26,7 @@ const pastEvents = [
     description: "Workshop Focus: Building Mobile Apps using FlutterFlow, a no-code/low-code platform."
   },
   {
-    title: "DevThon 2025",
+    title: "DevThon 2025: A State Level Hackathon",
     date: "20th March, 2025",
     description: "A hackathon focused on building real-world solutions through collaborative innovation and cutting-edge technology."
   }
