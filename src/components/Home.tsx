@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Code2, Users, Calendar, Target, ChevronLeft, ChevronRight, Clock, AlertCircle, Linkedin, Instagram } from 'lucide-react';
 import flutterflowImage from '../assets/team/workshop2024.jpg';
-import techTitansImage from '../assets/team/techtitans.jpg';
 import anandimg from '../assets/team/anand.jpg'
 import vrushabhimg from '../assets/team/Vrushabh.jpg'
 import dishaimg from '../assets/team/Disha.jpg'
@@ -11,6 +10,7 @@ import apurvaimg from '../assets/team/Apurva.jpg'
 import ritesh from '../assets/team/Ritesh.jpg'
 import nandita from '../assets/team/Nandita.jpg'
 import nishchay from '../assets/team/nishchay.jpg'
+import CoreTeam from '../assets/team/CoreTeam.jpg'
 
 
 type Event = {
@@ -51,7 +51,7 @@ const events = [
   },
   {
     title: "Tech Titans",
-    image: techTitansImage,
+    image: CoreTeam,
     // date: "25th October, 2026"
   
   }
