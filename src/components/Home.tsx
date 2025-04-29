@@ -438,7 +438,7 @@ function Home() {
           <p className="text-center text-gray-500 dark:text-gray-400">No past events available yet.</p>
         ) : (
           <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-            {pastEvents.slice(0, 3).map((event, index) => (
+            {[...pastEvents].reverse().slice(0, 3).map((event, index) => (
               <li
                 key={index}
                 className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
