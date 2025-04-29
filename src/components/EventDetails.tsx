@@ -7,31 +7,7 @@ import F3 from '../assets/flutterflow/F3.jpg';
 import F4 from '../assets/flutterflow/F4.jpg';
 
 const eventDetails = {
-  '1': {
-    title: 'FlutterFlow Workshop',
-    date: 'October 25, 2024',
-    description: `The Flutter Flow Workshop provided an immersive hands-on experience, guiding participants in building a WhatsApp Clone using Flutter Flow’s powerful no-code platform. Attendees learned to design intuitive UI, integrate real-time chat functionality, and implement user authentication seamlessly. This workshop empowered participants with practical knowledge of app development, helping them create a fully functional project with ease.`,
-    participants: '100+',
-    venue: 'Sipna College of Engineering & Technology',
-    organizers: ['Sipna Coder’s Club'],
-    sponsors: ['NA'],
-    images: [
-      F1,
-      F2,
-      F3,
-      F4,
-    ],
-    highlights: [
-      'Introduction to Flutter Flow – No-code app development basics',
-      'Designed & developed a WhatsApp-like UI with smooth navigation',
-      'Integrated real-time chat functionality with backend support',
-      'Explored database integration and scalability best practices',
-      'Hands-on coding exercises & live project implementation',
-    ],
-    driveLink:'',
-  },
-
-  '2': {
+    '1': {
     title: 'DevThon 2025',
     date: 'March 20, 2025',
     description: `DevThon 2025 was a high-energy, innovation-packed offline hackathon where 40 selected teams collaborated to solve real-world problems. From brainstorming unique ideas to delivering functional prototypes, the event was a true test of creativity, teamwork, and technical expertise. Participants networked with peers, mentors, and industry professionals, unlocking new opportunities for growth and learning.`,
@@ -53,6 +29,30 @@ const eventDetails = {
       'Platform to showcase projects, collaborate, and gain recognition across institutions',
     ],
     driveLink:'https://drive.google.com/drive/folders/12jffFsut0kmKETxqDX5oc-8I9GRQnI74?usp=sharing',
+  },
+  
+  '2': {
+    title: 'FlutterFlow Workshop',
+    date: 'October 25, 2024',
+    description: `The Flutter Flow Workshop provided an immersive hands-on experience, guiding participants in building a WhatsApp Clone using Flutter Flow’s powerful no-code platform. Attendees learned to design intuitive UI, integrate real-time chat functionality, and implement user authentication seamlessly. This workshop empowered participants with practical knowledge of app development, helping them create a fully functional project with ease.`,
+    participants: '100+',
+    venue: 'Sipna College of Engineering & Technology',
+    organizers: ['Sipna Coder’s Club'],
+    sponsors: ['NA'],
+    images: [
+      F1,
+      F2,
+      F3,
+      F4,
+    ],
+    highlights: [
+      'Introduction to Flutter Flow – No-code app development basics',
+      'Designed & developed a WhatsApp-like UI with smooth navigation',
+      'Integrated real-time chat functionality with backend support',
+      'Explored database integration and scalability best practices',
+      'Hands-on coding exercises & live project implementation',
+    ],
+    driveLink:'',
   },
 };
 
