@@ -38,7 +38,7 @@ const futureEvents: Event[] = [];
 
 const events = [
   {
-    title: "Meet the Coder Club",
+    title: "Meet the Coder's Club",
     image: CoreTeam,
     date: "Year: 2024–25"
   
