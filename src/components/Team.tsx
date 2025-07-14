@@ -42,7 +42,7 @@ const coreMembers = [
   { 
     name: "Roshan Avatirak", 
     role: "Public Relation Officer(PRO)", 
-    image: "https://media.licdn.com/dms/image/v2/D5603AQGUhq3OGxTMTg/profile-displayphoto-shrink_400_400/B56ZYPtbvXGoAk-/0/1744020291660?e=1749686400&v=beta&t=eUuawApFD7Y5W0a2x1sQJU_tmKSeS55AHTdnhj4p1Sw",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGUhq3OGxTMTg/profile-displayphoto-shrink_400_400/B56ZYPtbvXGoAk-/0/1744020291660?e=1758153600&v=beta&t=s96Jvzj0z4FoRoKZeLf8x_jDQYdkZIaQ6ImEPTGOx1s",
     linkedin: "https://www.linkedin.com/in/roshan-avatirak/",
     // instagram: ""
   },
